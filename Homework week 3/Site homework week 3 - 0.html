@@ -1,0 +1,1744 @@
+﻿
+<!DOCTYPE html>
+<!--
+ _________   _______       ___     ___    ___      _____      _                  _      _ _
+|         | |        \    |   |   |   |  |   |    / ____|    | |                | |    | (_)
+|__     __| |    _    \   |   |   '   |  '   '   | |    _   _| |__   ___ _ __ __| | ___| |_  __ _
+   |   |    |   |  \   \  |   '_ /    '_/   /    | |   | | | | '_ \ / _ \ '__/ _` |/ _ \ | |/ _` |
+   |   |    |   |   |   | |         /      /     | |___| |_| | |_) |  __/ | | (_| |  __/ | | (_| |
+   '___'    '___'   '___' '_______ / '____/       \_____\__, |_.__/ \___|_|  \__,_|\___|_|_|\__,_|
+                                                         __/ |
+                                                        |___/
+Design by:
+——————————
+
+    ALEXANDER GRIFFIOEN
+   ✉alexander🐺thenextweb.com
+   ✎@oscaralexander
+   ✈Amsterdam, NL
+
+Implementation by:
+——————————————————
+
+    LAURA GONZÁLEZ          |   PABLO ROMÁN             |   JAVIER NEGRE
+   ✉laura🐧thenextweb.com    |  ✉pablo🐵thenextweb.com   |  ✉javi🐻thenextweb.com
+   ✎@freezydorito           |  ✎@pabloroman             |  ✎@javi_negre
+   ✈Oviedo, ES              |  ✈Amsterdam, NL           |  ✈Barcelona, ES
+
+    GORDAN KONDEV           |   JULIO FOULQUIÉ
+   ✉gordan🦁thenextweb.com  |  ✉julio🐼thenextweb.com
+   ✈Amsterdam, NL           |  ✎@julioelpoeta
+                            |  ✈Montevideo, UY
+
+🍺 Aren't you thirsty? Why don't you cyberdelia.knock() on the door? 🍻
+
+-->
+<html lang="en-us" prefix="og:http://ogp.me/ns# fb:http://ogp.me/ns/fb#" itemscope itemtype="https://schema.org/WebPage">
+<head>
+
+    <meta charset="UTF-8">
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <meta content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width" name="viewport">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="referrer" content="unsafe-url">
+    <meta name="apple-mobile-web-app-title" content="The Next Web">
+    <meta name="msvalidate.01" content="EBA9DC0DD4E376AF9708F73323680AB1" />
+
+    <title>TNW</title>
+
+    <link rel="manifest" href="/manifest.json">
+
+    <link rel="stylesheet" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/css/style.css?v=1516791406" type="text/css" />
+
+    <link rel="dns-prefetch" href="//cdn0.tnwcdn.com/">
+    <link rel="dns-prefetch" href="//www.googletagmanager.com">
+    <link rel="preconnect" href="//cdn0.tnwcdn.com/">
+    <link rel="preconnect" href="//www.googletagmanager.com">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/apple-touch-icon-57x57.png?v=1516791346">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/apple-touch-icon-60x60.png?v=1516791346">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/apple-touch-icon-72x72.png?v=1516791346">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/apple-touch-icon-76x76.png?v=1516791346">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/apple-touch-icon-114x114.png?v=1516791346">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/apple-touch-icon-120x120.png?v=1516791346">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/apple-touch-icon-144x144.png?v=1516791346">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/apple-touch-icon-152x152.png?v=1516791346">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/apple-touch-icon-180x180.png?v=1516791346">
+    <link rel="icon" type="image/png" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/favicon-32x32.png?v=1516791346" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/favicon-194x194.png?v=1516791346" sizes="194x194">
+    <link rel="icon" type="image/png" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/favicon-96x96.png?v=1516791346" sizes="96x96">
+    <link rel="icon" type="image/png" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/android-chrome-192x192.png?v=1516791346" sizes="192x192">
+    <link rel="icon" type="image/png" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/favicon-16x16.png?v=1516791346" sizes="16x16">
+    <link rel="shortcut icon" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/favicon.png?v=1516791346">
+    <link rel="alternate" type="application/rss+xml" title="The Next Web RSS Feed" href="http://feeds2.feedburner.com/thenextweb">
+    <!--  WP_HEAD   -->
+    <!-- This site is optimized with the Yoast SEO Premium plugin v5.9.4 - https://yoast.com/wordpress/plugins/seo/ -->
+    <meta name="description" content="Original and proudly opinionated perspectives on remarkable stories for Generation T" />
+    <link rel="canonical" href="https://thenextweb.com/" />
+    <link rel="next" href="https://thenextweb.com/page/2/" />
+    <link rel="publisher" href="https://plus.google.com/+thenextweb" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="TNW - International technology news, business and culture" />
+    <meta property="og:description" content="TNW is one of the world’s largest online publications that delivers an international perspective on the latest news about Internet technology, business and culture." />
+    <meta property="og:url" content="https://thenextweb.com/" />
+    <meta property="og:site_name" content="The Next Web" />
+    <meta property="og:image" content="https://cdn2.tnwcdn.com/wp-content/blogs.dir/1/files/2017/06/tnw-fb.png" />
+    <meta property="og:image:secure_url" content="https://cdn2.tnwcdn.com/wp-content/blogs.dir/1/files/2017/06/tnw-fb.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="Original and proudly opinionated perspectives on remarkable stories for Generation T" />
+    <meta name="twitter:title" content="TNW" />
+    <meta name="twitter:site" content="@thenextweb" />
+    <meta name="twitter:image" content="https://cdn2.tnwcdn.com/wp-content/blogs.dir/1/files/2017/06/tnw-fb.png" />
+    <script type='application/ld+json'>
+        {"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/thenextweb.com\/","name":"TNW","potentialAction":{"@type":"SearchAction","target":"https:\/\/thenextweb.com\/?q={search_term_string}","query-input":"required name=search_term_string"}}
+    </script>
+    <script type='application/ld+json'>
+        {"@context":"http:\/\/schema.org","@type":"Organization","url":"https:\/\/thenextweb.com\/","sameAs":["https:\/\/www.facebook.com\/thenextweb","https:\/\/instagram.com\/thenextweb\/","https:\/\/www.linkedin.com\/company\/the-next-web","https:\/\/plus.google.com\/+thenextweb","https:\/\/www.youtube.com\/user\/thenextweb","https:\/\/www.pinterest.com\/thenextweb\/","https:\/\/twitter.com\/thenextweb"],"@id":"#organization","name":"TNW","logo":"https:\/\/cdn1.tnwcdn.com\/wp-content\/blogs.dir\/1\/files\/2016\/06\/tnw-logo-amp.png"}
+    </script>
+    <!-- / Yoast SEO Premium plugin. -->
+
+    <link rel='dns-prefetch' href='//s.w.org' />
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel='stylesheet' id='wordlift-tnw-css' href='https://thenextweb.com/wp-content/plugins/wordlift-tnw/public/css/wordlift-tnw-public.css?ver=1.5.0-dev' type='text/css' media='all' />
+    <link rel='stylesheet' id='wordlift-css' href='https://thenextweb.com/wp-content/plugins/wordlift/public/css/wordlift-public.css?ver=3.16.3' type='text/css' media='all' />
+    <script type='text/javascript' src='https://thenextweb.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+    <script type='text/javascript' src='https://thenextweb.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+    <script type='text/javascript' src='https://thenextweb.com/wp-content/plugins/wordlift-tnw/public/js/wordlift-tnw-public.js?ver=1.5.0-dev'></script>
+    <link rel='https://api.w.org/' href='https://thenextweb.com/wp-json/' />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://thenextweb.com/xmlrpc.php?rsd" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://thenextweb.com/wp-includes/wlwmanifest.xml" />
+
+    <!-- JSON-LD cached: yes-->
+    <script type="application/ld+json">
+        {"@context":"http:\/\/schema.org","@type":"WebSite","@id":"https:\/\/thenextweb.com\/#website","name":"The Next Web","alternateName":"TNW","url":"https:\/\/thenextweb.com\/","publisher":{"@type":"Organization","@id":"http:\/\/data.thenextweb.com\/tnw\/entity\/the_next_web","name":"The Next Web","sameAs":["https:\/\/en.wikipedia.org\/wiki\/The_Next_Web","https:\/\/www.facebook.com\/thenextweb","https:\/\/www.twitter.com\/thenextweb","https:\/\/plus.google.com\/+TheNextWeb\/","https:\/\/instagram.com\/thenextweb","https:\/\/www.youtube.com\/user\/thenextweb","https:\/\/www.pinterest.com\/thenextweb\/","https:\/\/www.linkedin.com\/company\/the-next-web","https:\/\/vine.co\/thenextweb","https:\/\/thenextweb.tumblr.com","https:\/\/soundcloud.com\/thenextweb","https:\/\/vimeo.com\/thenextweb","https:\/\/vk.com\/thenextweb","https:\/\/www.slideshare.net\/thenextweb","https:\/\/flipboard.com\/@thenextweb","https:\/\/storify.com\/thenextweb","https:\/\/www.stumbleupon.com\/channel\/thenextweb","https:\/\/www.flickr.com\/photos\/thenextweb\/","https:\/\/foursquare.com\/thenextweb"]},"potentialAction":{"@type":"SearchAction","target":"https:\/\/thenextweb.com\/?q={search_term_string}","query-input":"required name=search_term_string"}}
+    </script>
+
+    <link rel="amphtml" href="https://thenextweb.com/hardfork/2018/01/29/cryptocurrency-mystery-box-review/?amp=1" />
+    <script>
+  (function (s,o,n,a,r,i,z,e) {s['StackSonarObject']=r;s[r]=s[r]||function(){
+  (s[r].q=s[r].q||[]).push(arguments)},s[r].l=1*new Date();i=o.createElement(n),
+  z=o.getElementsByTagName(n)[0];i.async=1;i.src=a;z.parentNode.insertBefore(i,z)
+  })(window,document,'script','https://www.stack-sonar.com/ping.js','stackSonar');
+
+  stackSonar('stack-connect-wp', 'xbcLoqGe2L037SCrJ_Im4A');
+    </script>
+    <!--  WP_HEAD   -->
+
+    <meta property="twitter:account_id" content="10876852">
+    <meta property="fb:app_id" content="378011798897423">
+    <link href="https://plus.google.com/115081025762845243709/" rel="publisher">
+    <meta property="fb:pages" content="106976563522"><!-- TNW -->
+    <meta property="fb:pages" content="136548879865026"><!-- TNW Conference -->
+    <meta property="fb:pages" content="252857631761065"><!-- TNW NYC -->
+    <meta property="fb:pages" content="665773266831844"><!-- Deals -->
+    <meta name="yandex-verification" content="66df89eec58f9170">
+
+
+    <script type="text/javascript">
+	var googletag = googletag || {};
+	googletag.cmd = googletag.cmd || [];
+
+	window.dataLayer = window.dataLayer || [];
+    </script>
+
+    <script type="text/javascript">
+
+    var IS_MOBILE = false;
+
+    var APP_LOCALE = {
+        country: "GR",
+        region: "EU",
+        city: ""
+    };
+
+    dataLayer.push({
+        'location': [
+            APP_LOCALE
+        ]
+    });
+    </script>
+    <!-- DataLayer -->
+    <script type="text/javascript">dataLayer.push({"version":"4 \/ 4.9.2","page":[{"template":"home","ads":[{"siteskin":0,"sponsored":0}]}],"user":[{"shares":[{"fb":0,"tw":0,"li":0,"go":0,"re":0}]}]});</script>
+    <script type="text/javascript">dataLayer.push({"page":[{"homepage":"3"}]});</script>
+
+    <!-- Google Tag Manager -->
+    <script>
+	(function (w, d, s, l, i) {
+		w[l] = w[l] || [];
+		w[l].push({
+			'gtm.start': new Date().getTime(), event: 'gtm.js'
+		});
+		var f = d.getElementsByTagName(s)[0],
+			j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+		j.async = true;
+		j.src =
+			'//www.googletagmanager.com/gtm.js?id=' + i + dl;
+		f.parentNode.insertBefore(j, f);
+	})(window, document, 'script', 'dataLayer', 'GTM-MHDDSC');
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Google Tag Manager -->
+    <noscript>
+        <iframe height="0" src="//www.googletagmanager.com/ns.html?id=GTM-MHDDSC" style="display: none; visibility: hidden;" width="0"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager -->
+    <!-- Cookie consent -->
+    <script>
+    function hideCookieConsent() {
+        document.getElementsByTagName('html')[0].className = document.getElementsByTagName('html')[0].className.replace(/(?:^|\s)no-cookies(?!\S)/g, '');
+    }
+
+    function showCookieConsent() {
+        document.getElementsByTagName('html')[0].className = document.getElementsByTagName('html')[0].className += " no-cookies";
+    }
+
+    function setCookieConsentCookie() {
+        var exdays = 365;
+        var exdate = new Date();
+        exdate.setDate(exdate.getDate() + exdays);
+        var c_value = escape("1") + ((exdays == null) ? "" : "; path=/; expires=" + exdate.toUTCString());
+        document.cookie = "tnw_cookie_consent" + "=" + c_value;
+    }
+
+    function cookiesAccepted() {
+        setCookieConsentCookie();
+        hideCookieConsent();
+    }
+
+    (function() {
+        var cookie = "tnw_cookie_consent";
+        var value = "; " + document.cookie;
+        var parts = value.split("; " + cookie + "=");
+        if (parts.length == 1) {
+            showCookieConsent();
+        }
+    })();
+    </script>
+
+    <script>
+/* Modernizr 2.8.3 (Custom Build) | MIT & BSD
+ * Build: http://modernizr.com/download/#-touch-cssclasses-teststyles-prefixes
+ */
+;window.Modernizr=function(a,b,c){function w(a){j.cssText=a}function x(a,b){return w(m.join(a+";")+(b||""))}function y(a,b){return typeof a===b}function z(a,b){return!!~(""+a).indexOf(b)}function A(a,b,d){for(var e in a){var f=b[a[e]];if(f!==c)return d===!1?a[e]:y(f,"function")?f.bind(d||b):f}return!1}var d="2.8.3",e={},f=!0,g=b.documentElement,h="modernizr",i=b.createElement(h),j=i.style,k,l={}.toString,m=" -webkit- -moz- -o- -ms- ".split(" "),n={},o={},p={},q=[],r=q.slice,s,t=function(a,c,d,e){var f,i,j,k,l=b.createElement("div"),m=b.body,n=m||b.createElement("body");if(parseInt(d,10))while(d--)j=b.createElement("div"),j.id=e?e[d]:h+(d+1),l.appendChild(j);return f=["&#173;",'<style id="s',h,'">',a,"</style>"].join(""),l.id=h,(m?l:n).innerHTML+=f,n.appendChild(l),m||(n.style.background="",n.style.overflow="hidden",k=g.style.overflow,g.style.overflow="hidden",g.appendChild(n)),i=c(l,a),m?l.parentNode.removeChild(l):(n.parentNode.removeChild(n),g.style.overflow=k),!!i},u={}.hasOwnProperty,v;!y(u,"undefined")&&!y(u.call,"undefined")?v=function(a,b){return u.call(a,b)}:v=function(a,b){return b in a&&y(a.constructor.prototype[b],"undefined")},Function.prototype.bind||(Function.prototype.bind=function(b){var c=this;if(typeof c!="function")throw new TypeError;var d=r.call(arguments,1),e=function(){if(this instanceof e){var a=function(){};a.prototype=c.prototype;var f=new a,g=c.apply(f,d.concat(r.call(arguments)));return Object(g)===g?g:f}return c.apply(b,d.concat(r.call(arguments)))};return e}),n.touch=function(){var c;return"ontouchstart"in a||a.DocumentTouch&&b instanceof DocumentTouch?c=!0:t(["@media (",m.join("touch-enabled),("),h,")","{#modernizr{top:9px;position:absolute}}"].join(""),function(a){c=a.offsetTop===9}),c};for(var B in n)v(n,B)&&(s=B.toLowerCase(),e[s]=n[B](),q.push((e[s]?"":"no-")+s));return e.addTest=function(a,b){if(typeof a=="object")for(var d in a)v(a,d)&&e.addTest(d,a[d]);else{a=a.toLowerCase();if(e[a]!==c)return e;b=typeof b=="function"?b():b,typeof f!="undefined"&&f&&(g.className+=" "+(b?"":"no-")+a),e[a]=b}return e},w(""),i=k=null,e._version=d,e._prefixes=m,e.testStyles=t,g.className=g.className.replace(/(^|\s)no-js(\s|$)/,"$1$2")+(f?" js "+q.join(" "):""),e}(this,this.document);
+    </script>
+</head>
+
+<body class="is-frontpage">
+
+    <nav class="nav">
+        <div class="nav-logo">
+            <a href="/" title="The Next Web" data-event-category="Top" data-event-action="Navigation" data-event-label="News" data-event-non-interaction="true">
+                <img alt="The Next Web" src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg">
+            </a>
+            <ul class="nav-logo-popout">
+                <li><a class="is-active" href="/" data-event-category="Top" data-event-action="Navigation" data-event-label="News" data-event-non-interaction="true">News</a></li>
+                <li><a href="/conference/" target="_blank" data-event-category="Top" data-event-action="Navigation" data-event-label="Conference" data-event-non-interaction="true">Conference</a></li>
+                <li><a href="/new-york/" target="_blank" data-event-category="Top" data-event-action="Navigation" data-event-label="TNW NYC" data-event-non-interaction="true">TNW NYC</a></li>
+                <li><a href="https://index.co/" target="_blank" data-event-category="Top" data-event-action="Navigation" data-event-label="Index" data-event-non-interaction="true">Index</a></li>
+                <li><a href="https://tq.co/" target="_blank" data-event-category="Top" data-event-action="Navigation" data-event-label="TQ" data-event-non-interaction="true">TQ</a></li>
+                <li><a href="https://deals.thenextweb.com/?utm_source=thenextweb.com&amp;utm_medium=referral&amp;utm_campaign=navbar" target="_blank" data-event-category="Top" data-event-action="Navigation" data-event-label="Deals" data-event-non-interaction="true">Deals</a></li>
+                <li><a href="https://answers.thenextweb.com/" target="_blank" data-event-category="Top" data-event-action="Navigation" data-event-label="Answers" data-event-non-interaction="true">Answers</a></li>
+                <li><a href="/x/" target="_blank" data-event-category="Top" data-event-action="Navigation" data-event-label="TNW X" data-event-non-interaction="true">TNW X</a></li>
+            </ul>
+        </div>
+        <ul class="nav-tnw" role="navigation">
+            <li><a class="is-active" href="/" data-event-category="Top" data-event-action="Navigation" data-event-label="News" data-event-non-interaction="true">News</a></li>
+            <li><a href="/conference/" target="_blank" data-event-category="Top" data-event-action="Navigation" data-event-label="Conference" data-event-non-interaction="true">Conference</a></li>
+            <li><a href="/new-york/" target="_blank" data-event-category="Top" data-event-action="Navigation" data-event-label="New York" data-event-non-interaction="true">New York</a></li>
+            <li><a href="https://index.co/" target="_blank" data-event-category="Top" data-event-action="Navigation" data-event-label="Index" data-event-non-interaction="true">Index</a></li>
+            <li><a href="https://tq.co/" target="_blank" data-event-category="Top" data-event-action="Navigation" data-event-label="TQ" data-event-non-interaction="true">TQ</a></li>
+            <li><a href="https://deals.thenextweb.com/?utm_source=thenextweb.com&amp;utm_medium=referral&amp;utm_campaign=navbar" target="_blank" data-event-category="Top" data-event-action="Navigation" data-event-label="Deals" data-event-non-interaction="true">Deals</a></li>
+            <li><a href="https://answers.thenextweb.com/" target="_blank" data-event-category="Top" data-event-action="Navigation" data-event-label="Answers" data-event-non-interaction="true">Answers</a></li>
+            <li><a href="https://thenextweb.com/x" target="_blank" data-event-category="Top" data-event-action="Navigation" data-event-label="TNW X" data-event-non-interaction="true">TNW X</a></li>
+
+            <li class="nav-tnw-right"><a href="/about#contact" data-event-category="Top" data-event-action="Navigation" data-event-label="Contact" data-event-non-interaction="true">Contact</a></li>
+            <li class="nav-tnw-right"><a href="https://thenextweb.homerun.hr/" data-event-category="Top" data-event-action="Navigation" data-event-label="Jobs" data-event-non-interaction="true">Jobs</a></li>
+            <li class="nav-tnw-right"><a href="/advertise" data-event-category="Top" data-event-action="Navigation" data-event-label="Advertise" data-event-non-interaction="true">Advertise</a></li>
+            <li class="nav-tnw-right"><a href="/team" data-event-category="Top" data-event-action="Navigation" data-event-label="News" data-event-non-interaction="true">Team</a></li>
+            <li class="nav-tnw-right"><a href="/about" data-event-category="Top" data-event-action="Navigation" data-event-label="News" data-event-non-interaction="true">About</a></li>
+        </ul>
+        <div class="u-clear" role="navigation">
+
+            <ul class="nav-sections">
+                <li class="nav-sections-section"><a href="/latest" data-event-category="Top" data-event-action="Channels" data-event-label="Latest" data-event-non-interaction="true">Latest</a></li>
+                <li class="nav-sections-section"><a href="/section/insights" data-event-category="Top" data-event-action="Channels" data-event-label="Insights" data-event-non-interaction="true">Insights</a></li>
+                <li class="nav-sections-section"><a href="/section/distract" data-event-category="Top" data-event-action="Channels" data-event-label="Distract" data-event-non-interaction="true">Distract</a></li>
+                <li class="nav-sections-section"><a href="/full-stack" data-event-category="Top" data-event-action="Channels" data-event-label="Full stack" data-event-non-interaction="true">Full stack</a></li>
+                <li class="nav-sections-section"><a href="/investing-2-0" data-event-category="Top" data-event-action="Channels" data-event-label="Investing 2.0" data-event-non-interaction="true">Investing 2.0</a></li>
+            </ul>
+
+            <ul class="nav-icons">
+                <li class="cookieConsent">
+                    <a href="#"><i class="icon icon--cookie"></i></a>
+                    <div class="cookieConsent-popOut">
+                        <header>
+                            <h2>Have a cookie</h2>
+                        </header>
+                        <main>
+                            <p>
+                                TNW uses cookies to personalize content and ads to
+                                make our site easier for you to use.
+                                We do also share that information with third parties for
+                                advertising &amp; analytics.
+                            </p>
+                        </main>
+                        <footer>
+                            <a class="button button--small" onclick="cookiesAccepted();" data-event-category="Top" data-event-action="Cookies" data-event-label="OK" data-event-non-interaction="true">Got it!</a>
+                            <span>
+                                or <a href="/privacy-policy/" data-event-category="Top" data-event-action="Cookies" data-event-label="More information" data-event-non-interaction="true">More info</a>
+                            </span>
+                        </footer>
+                    </div>
+                </li>
+                <li>
+                    <a id="search--open" href="#"><i class="icon icon--search--dark"></i></a>
+                    <!--
+                    <li><a href="#"><i class="icon icon--user--dark"></i></a>
+                    -->
+                <li>
+                    <a class="nav-mob-toggle" id="nav-mob-toggle" href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav-follow">
+                <li><a data-event-category="Top" data-event-action="Social" data-event-label="Facebook" data-event-non-interaction="true" href="https://www.facebook.com/thenextweb" title="Follow us on Facebook" target="_blank"><i class="icon icon--facebook--dark"></i></a>
+                <li><a data-event-category="Top" data-event-action="Social" data-event-label="Twitter" data-event-non-interaction="true" href="https://www.twitter.com/thenextweb" title="Follow us on Twitter" target="_blank"><i class="icon icon--twitter--dark"></i></a>
+                <li class="nav-follow-extra">
+                    <ul>
+                        <li><a href="https://plus.google.com/+TheNextWeb" title="Follow us on Google+" target="_blank" data-event-category="Top" data-event-action="Social" data-event-label="Google+" data-event-non-interaction="true"><i class="icon icon--google--dark"></i></a>
+                        <li><a href="https://www.linkedin.com/company/the-next-web" title="Follow us on LinkedIn" target="_blank" data-event-category="Top" data-event-action="Social" data-event-label="LinkedIn" data-event-non-interaction="true"><i class="icon icon--linkedin--dark"></i></a>
+                        <li><a href="https://www.youtube.com/user/thenextweb" title="Watch our videos on YouTube" target="_blank" data-event-category="Top" data-event-action="Social" data-event-label="YouTube" data-event-non-interaction="true"><i class="icon icon--youtube--dark"></i></a>
+                        <li><a href="https://instagram.com/thenextweb" title="Follow us on Instagram" target="_blank" data-event-category="Top" data-event-action="Social" data-event-label="Instagram" data-event-non-interaction="true"><i class="icon icon--instagram--dark"></i></a>
+                        <li><a href="http://pinterest.com/thenextweb/" title="Follow us on Pinterest" target="_blank" data-event-category="Top" data-event-action="Social" data-event-label="Pinterest" data-event-non-interaction="true"><i class="icon icon--pinterest--dark"></i></a>
+                        <li><a href="http://feeds2.feedburner.com/thenextweb" title="Read our RSS feed" target="_blank" data-event-category="Top" data-event-action="Social" data-event-label="RSS" data-event-non-interaction="true"><i class="icon icon--rss--dark"></i></a>
+                    </ul>
+                </li>
+                <li><a data-modal="modalStayTuned" href="#"><i class="icon icon--mail--dark"></i></a>
+                <li class="nav-follow-more nav-follow-toggle"><a href="#"><i class="icon icon--more--dark"></i></a>
+                <li class="nav-follow-less nav-follow-toggle"><a href="#"><i class="icon icon--close"></i></a>
+            </ul>
+        </div>
+
+        <div class="nav-mob">
+            <div class="nav-mob-content">
+                <ul class="nav-mob-follow">
+                    <li><a data-modal="modalStayTuned" href="#"><i class="icon icon--mail--light"></i></a>
+                    <li><a href="https://www.facebook.com/thenextweb" title="Follow us on Facebook" target="_blank" data-event-category="Top" data-event-action="Social" data-event-label="Facebook" data-event-non-interaction="true"><i class="icon icon--facebook--light"></i></a></li>
+                    <li><a href="https://twitter.com/thenextweb" title="Follow us on Twitter" target="_blank" data-event-category="Top" data-event-action="Social" data-event-label="Twitter" data-event-non-interaction="true"><i class="icon icon--twitter--light"></i></a></li>
+                    <li><a href="https://plus.google.com/+TheNextWeb" title="Follow us on Google+" target="_blank" data-event-category="Top" data-event-action="Social" data-event-label="Google+" data-event-non-interaction="true"><i class="icon icon--google--light"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/the-next-web" title="Follow us on LinkedIn" target="_blank" data-event-category="Top" data-event-action="Social" data-event-label="LinkedIn" data-event-non-interaction="true"><i class="icon icon--linkedin--light"></i></a></li>
+                    <li><a href="https://www.youtube.com/user/thenextweb" title="Watch our videos on YouTube" target="_blank" data-event-category="Top" data-event-action="Social" data-event-label="YouTube" data-event-non-interaction="true"><i class="icon icon--youtube--light"></i></a></li>
+                    <li><a href="https://pinterest.com/thenextweb" title="Follow us on Pinterest" target="_blank" data-event-category="Top" data-event-action="Social" data-event-label="Pinterest" data-event-non-interaction="true"><i class="icon icon--pinterest--light"></i></a></li>
+                    <li><a href="https://instagram.com/thenextweb" title="Follow us on Instagram" target="_blank" data-event-category="Top" data-event-action="Social" data-event-label="Instagram" data-event-non-interaction="true"><i class="icon icon--instagram--light"></i></a></li>
+                    <li><a href="http://feeds2.feedburner.com/thenextweb" title="Read our RSS feed" target="_blank" data-event-category="Top" data-event-action="Social" data-event-label="RSS Feed" data-event-non-interaction="true"><i class="icon icon--rss--light"></i></a></li>
+                </ul>
+                <div class="u-row">
+                    <div class="u-col-xs-6">
+                        <h5>Sections</h5>
+                        <ul class="nav-mob-menu">
+                            <li><a href="/latest" data-event-category="Top" data-event-action="Sections" data-event-label="Latest" data-event-non-interaction="true">Latest</a></li>
+                            <li><a href="/section/insights" data-event-category="Top" data-event-action="Sections" data-event-label="Insights" data-event-non-interaction="true">Insights</a></li>
+                            <li><a href="/section/contributors" data-event-category="Top" data-event-action="Sections" data-event-label="Contributors" data-event-non-interaction="true">Contributors</a></li>
+                            <li><a href="/full-stack/" data-event-category="Top" data-event-action="Sections" data-event-label="Full Stack" data-event-non-interaction="true">Full Stack</a></li>
+                            <li><a href="/investing-2-0/" data-event-category="Top" data-event-action="Sections" data-event-label="Investing 2.0" data-event-non-interaction="true">Investing 2.0</a></li>
+                        </ul>
+                    </div>
+                    <div class="u-col-xs-6">
+                        <h5>About TNW</h5>
+                        <ul class="nav-mob-menu">
+                            <li><a href="/about" data-event-category="Top" data-event-action="Navigation" data-event-label="About" data-event-non-interaction="true">About</a></li>
+                            <li><a href="/team" data-event-category="Top" data-event-action="Navigation" data-event-label="Team" data-event-non-interaction="true">Team</a></li>
+                            <li><a href="https://tnwads.typeform.com/to/ofLLXt" data-event-category="Top" data-event-action="Navigation" data-event-label="Advertise" data-event-non-interaction="true">Advertise</a></li>
+                            <li><a href="/jobs" data-event-category="Top" data-event-action="Navigation" data-event-label="Jobs" data-event-non-interaction="true">Jobs</a></li>
+                            <li><a href="/about#contact" data-event-category="Top" data-event-action="Navigation" data-event-label="Contact" data-event-non-interaction="true">Contact</a></li>
+                        </ul>
+                        <h5>TNW Sites</h5>
+                        <ul class="nav-mob-menu">
+                            <li><a href="/" target="_blank" data-event-category="Top" data-event-action="Navigation" data-event-label="News" data-event-non-interaction="true">News</a></li>
+                            <li><a href="/conference/" target="_blank" data-event-category="Top" data-event-action="Navigation" data-event-label="Conference" data-event-non-interaction="true">Conference</a></li>
+                            <li><a href="/nyc/" target="_blank" data-event-category="Top" data-event-action="Navigation" data-event-label="TNW NYC" data-event-non-interaction="true">TNW NYC</a></li>
+                            <li><a href="https://index.co/" target="_blank" data-event-category="Top" data-event-action="Navigation" data-event-label="Index" data-event-non-interaction="true">Index</a></li>
+                            <li><a href="https://tq.co/" target="_blank" data-event-category="Top" data-event-action="Navigation" data-event-label="TQ" data-event-non-interaction="true">TQ</a></li>
+                            <li><a href="http://deals.thenextweb.com/" target="_blank" data-event-category="Top" data-event-action="Navigation" data-event-label="Deals" data-event-non-interaction="true">Deals</a></li>
+                            <li><a href="https://answers.thenextweb.com/" target="_blank" data-event-category="Top" data-event-action="Navigation" data-event-label="Answers" data-event-non-interaction="true">Answers</a></li>
+                            <li><a href="http://cc.thenextweb.com/" target="_blank" data-event-category="Top" data-event-action="Navigation" data-event-label="Cyberspace Culture" data-event-non-interaction="true">Cyberspace Culture</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </nav>
+    <main class="main">
+
+        <section class="cover cover--grid3">
+
+
+            <article class="cover-story" data-post-id="1103933">
+                <div class="cover-image lazy" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2017/11/Apple-self-driving-hed-796x398.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2017/11/Apple-self-driving-hed-796x398.jpg 796w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2017/11/Apple-self-driving-hed-280x140.jpg 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2017/11/Apple-self-driving-hed-540x270.jpg 540w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2017/11/Apple-self-driving-hed-270x135.jpg 270w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2017/11/Apple-self-driving-hed-1592x796.jpg 1592w" sizes="(max-width: 796px) 100vw, 796px" width="796" height="398"></div>
+                <a class="cover-trigger" href="https://thenextweb.com/apple/2018/01/27/apple-expands-self-driving-car-fleet-inch-closer-automation-domination/" data-event-category="Homepage" data-event-action="Top story" data-event-label="Post" data-event-non-interaction="true"></a>
+
+                <div class="cover-gradient"></div>
+
+                <div class="cover-logo"></div>
+                <div id="coverDate" class="cover-date"></div>
+                <header class="cover-header">
+                    <h5 class="cover-section"><a href="/section/tech">Tech</a></h5>
+                    <h2 class="cover-title"><a href="https://thenextweb.com/apple/2018/01/27/apple-expands-self-driving-car-fleet-inch-closer-automation-domination/">Apple expands its self-driving car fleet to inch closer to automation domination</a></h2>
+                    <ul class="cover-byline">
+                        <li>by <a href="https://thenextweb.com/author/rachelkaser/">Rachel Kaser</a></li>
+                        <li><i class="icon icon--clock--light"></i><time datetime="2018-01-27T00:37:06+01:00" class="timeago"></time></li>
+                        <li><i class="icon icon--share--light"></i>346</li>
+                    </ul>
+                </header>
+            </article>
+
+
+            <article class="cover-story" data-post-id="1104022">
+                <div class="cover-image lazy" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/00100dPORTRAIT_00100_BURST20180126182822872_COVER-796x597.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/00100dPORTRAIT_00100_BURST20180126182822872_COVER-796x597.jpg 796w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/00100dPORTRAIT_00100_BURST20180126182822872_COVER-280x210.jpg 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/00100dPORTRAIT_00100_BURST20180126182822872_COVER-360x270.jpg 360w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/00100dPORTRAIT_00100_BURST20180126182822872_COVER-180x135.jpg 180w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/00100dPORTRAIT_00100_BURST20180126182822872_COVER-368x276.jpg 368w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/00100dPORTRAIT_00100_BURST20180126182822872_COVER-736x552.jpg 736w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/00100dPORTRAIT_00100_BURST20180126182822872_COVER-1044x783.jpg 1044w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/00100dPORTRAIT_00100_BURST20180126182822872_COVER-632x474.jpg 632w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/00100dPORTRAIT_00100_BURST20180126182822872_COVER-536x402.jpg 536w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/00100dPORTRAIT_00100_BURST20180126182822872_COVER.jpg 1093w" sizes="(max-width: 796px) 100vw, 796px" width="796" height="597"></div>
+                <a class="cover-trigger" href="https://thenextweb.com/reviews/2018/01/27/this-big-ass-battery-keeps-your-beer-cold-while-powering-10-other-devices/" data-event-category="Homepage" data-event-action="Top story" data-event-label="Post" data-event-non-interaction="true"></a>
+                <header class="cover-header">
+                    <h5 class="cover-section"><a href="/section/tech">Tech</a></h5>
+                    <h2 class="cover-title"><a href="https://thenextweb.com/reviews/2018/01/27/this-big-ass-battery-keeps-your-beer-cold-while-powering-10-other-devices/">This big-ass battery keeps your beer cold while powering 10 other devices</a></h2>
+                    <ul class="cover-byline">
+                        <li>by <a href="https://thenextweb.com/author/bryanclark/">Bryan Clark</a></li>
+                        <li><i class="icon icon--clock--light"></i><time datetime="2018-01-27T03:36:57+01:00" class="timeago"></time></li>
+                        <li><i class="icon icon--share--light"></i>309</li>
+                    </ul>
+                </header>
+            </article>
+
+
+            <article class="cover-story" data-post-id="1103976">
+                <div class="cover-image lazy" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/dark-web-drugs-796x419.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/dark-web-drugs-796x419.jpg 796w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/dark-web-drugs-280x147.jpg 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/dark-web-drugs-513x270.jpg 513w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/dark-web-drugs-256x135.jpg 256w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/dark-web-drugs.jpg 1557w" sizes="(max-width: 796px) 100vw, 796px" width="796" height="419"></div>
+                <a class="cover-trigger" href="https://thenextweb.com/hardfork/2018/01/27/this-is-why-buying-drugs-with-bitcoin-is-a-really-bad-idea/" data-event-category="Homepage" data-event-action="Top story" data-event-label="Post" data-event-non-interaction="true"></a>
+                <header class="cover-header">
+                    <h5 class="cover-section"><a href="/section/insights">Insights</a></h5>
+                    <h2 class="cover-title"><a href="https://thenextweb.com/hardfork/2018/01/27/this-is-why-buying-drugs-with-bitcoin-is-a-really-bad-idea/">This is why buying drugs with bitcoin is a really bad idea</a></h2>
+                    <ul class="cover-byline">
+                        <li>by <a href="https://thenextweb.com/author/bryanclark/">Bryan Clark</a></li>
+                        <li><i class="icon icon--clock--light"></i><time datetime="2018-01-27T00:25:50+01:00" class="timeago"></time></li>
+                        <li><i class="icon icon--share--light"></i>112</li>
+                    </ul>
+                </header>
+            </article>
+
+
+            <article class="cover-story" data-post-id="1103987">
+                <div class="cover-image lazy" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/MVIMG_20180126_175901-796x448.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/MVIMG_20180126_175901-796x448.jpg 796w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/MVIMG_20180126_175901-280x157.jpg 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/MVIMG_20180126_175901-480x270.jpg 480w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/MVIMG_20180126_175901-240x135.jpg 240w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/MVIMG_20180126_175901.jpg 1458w" sizes="(max-width: 796px) 100vw, 796px" width="796" height="448"></div>
+                <a class="cover-trigger" href="https://thenextweb.com/reviews/2018/01/27/review-logitechs-powerplay-means-never-charge-mouse/" data-event-category="Homepage" data-event-action="Top story" data-event-label="Post" data-event-non-interaction="true"></a>
+                <header class="cover-header">
+                    <h5 class="cover-section"><a href="/section/gear">Gear</a></h5>
+                    <h2 class="cover-title"><a href="https://thenextweb.com/reviews/2018/01/27/review-logitechs-powerplay-means-never-charge-mouse/">Review: Logitech’s PowerPlay means I never have to charge my mouse again</a></h2>
+                    <ul class="cover-byline">
+                        <li>by <a href="https://thenextweb.com/author/napierlopez/">Napier Lopez</a></li>
+                        <li><i class="icon icon--clock--light"></i><time datetime="2018-01-27T00:16:18+01:00" class="timeago"></time></li>
+                        <li><i class="icon icon--share--light"></i>64</li>
+                    </ul>
+                </header>
+            </article>
+
+
+        </section>
+
+        <script type="application/ld+json">
+            {"@context":"https:\/\/schema.org","@id":"#Publisher","@type":"Organization","name":"The Next Web","logo":"https:\/\/cdn0.tnwcdn.com\/plus\/img\/tnw-brandmark.svg","url":"https:\/\/thenextweb.com","sameAs":["https:\/\/en.wikipedia.org\/wiki\/The_Next_Web","http:\/\/www.facebook.com\/thenextweb","https:\/\/www.twitter.com\/thenextweb","https:\/\/plus.google.com\/+TheNextWeb\/","https:\/\/instagram.com\/thenextweb","https:\/\/www.youtube.com\/user\/thenextweb","https:\/\/www.pinterest.com\/thenextweb\/","https:\/\/www.linkedin.com\/company\/the-next-web","https:\/\/vine.co\/thenextweb","https:\/\/thenextweb.tumblr.com","https:\/\/soundcloud.com\/thenextweb","https:\/\/vimeo.com\/thenextweb","https:\/\/vk.com\/thenextweb","https:\/\/www.slideshare.net\/thenextweb","https:\/\/flipboard.com\/@thenextweb","https:\/\/storify.com\/thenextweb","https:\/\/www.stumbleupon.com\/channel\/thenextweb","https:\/\/www.flickr.com\/photos\/thenextweb\/","https:\/\/foursquare.com\/thenextweb"]}
+        </script>
+        <div class="wrapper">
+
+
+            <section class="latest">
+
+                <div class="tnw-ad TNW_DSKT_HOME_LB"></div>
+                <div class="tnw-ad TNW_MS_HOME_MPU_ATF"></div>
+
+                <h2><a href="/latest">Latest news</a></h2>
+                <ul class="u-row">
+                    <li class="u-col-xs-12 u-col-m-4 u-col-l-3" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Post" data-event-non-interaction="true">
+                        <div class="story story--smallMobile">
+                            <a class="lazy story-image" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/cryptocurrency-1-498x270.png" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/cryptocurrency-1-498x270.png 498w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/cryptocurrency-1-280x152.png 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/cryptocurrency-1-249x135.png 249w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/cryptocurrency-1-796x431.png 796w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/cryptocurrency-1.png 1200w" sizes="(max-width: 498px) 100vw, 498px" width="498" height="270" href="https://thenextweb.com/hardfork/2018/01/29/cryptocurrency-mystery-box-review/"></a>
+                            <h4 class="story-title">
+                                <a href="https://thenextweb.com/hardfork/2018/01/29/cryptocurrency-mystery-box-review/">
+                                    We got a cryptocurrency mystery box so you don’t have to
+                                </a>
+                            </h4>
+                            <ul class="story-byline">
+                                <li><a href="https://thenextweb.com/author/dimitarmihov/">Mix</a></li>
+                                <li>
+                                    <time datetime="2018-01-29T12:47:14+01:00" class="timeago"></time>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="u-col-xs-12 u-col-m-4 u-col-l-3" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Post" data-event-non-interaction="true">
+                        <div class="story story--smallMobile">
+                            <a class="lazy story-image" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/chatbot-480x270.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/chatbot-480x270.jpg 480w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/chatbot-280x158.jpg 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/chatbot-240x135.jpg 240w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/chatbot-796x448.jpg 796w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/chatbot.jpg 1104w" sizes="(max-width: 480px) 100vw, 480px" width="480" height="270" href="https://thenextweb.com/full-stack/2018/01/29/how-to-build-your-customer-happiness-chatbot-according-to-people-who-do-this-everyday/"></a>
+                            <h4 class="story-title">
+                                <a href="https://thenextweb.com/full-stack/2018/01/29/how-to-build-your-customer-happiness-chatbot-according-to-people-who-do-this-everyday/">
+                                    How to build your customer happiness chatbot — according to people who do this every day
+                                </a>
+                            </h4>
+                            <ul class="story-byline">
+                                <li><a href="https://thenextweb.com/author/ritikapuri/">Ritika Puri</a></li>
+                                <li>
+                                    <time datetime="2018-01-29T11:56:06+01:00" class="timeago"></time>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="u-col-xs-12 u-col-m-4 u-col-l-3" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Post" data-event-non-interaction="true">
+                        <div class="story story--smallMobile">
+                            <a class="lazy story-image" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/file-20171212-9396-zfdnwd-360x270.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/file-20171212-9396-zfdnwd-360x270.jpg 360w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/file-20171212-9396-zfdnwd-280x210.jpg 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/file-20171212-9396-zfdnwd-180x135.jpg 180w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/file-20171212-9396-zfdnwd-368x276.jpg 368w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/file-20171212-9396-zfdnwd-736x552.jpg 736w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/file-20171212-9396-zfdnwd-632x474.jpg 632w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/file-20171212-9396-zfdnwd-536x402.jpg 536w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/file-20171212-9396-zfdnwd.jpg 754w" sizes="(max-width: 360px) 100vw, 360px" width="360" height="270" href="https://thenextweb.com/syndication/2018/01/29/letting-prisoners-use-internet-good-society-arent/"></a>
+                            <h4 class="story-title">
+                                <a href="https://thenextweb.com/syndication/2018/01/29/letting-prisoners-use-internet-good-society-arent/">
+                                    Letting prisoners use the internet is good for society — so why aren’t we?
+                                </a>
+                            </h4>
+                            <ul class="story-byline">
+                                <li><a href="https://thenextweb.com/author/theconversation/">The Conversation</a></li>
+                                <li>
+                                    <time datetime="2018-01-29T11:28:45+01:00" class="timeago"></time>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="u-col-xs-12 u-col-m-4 u-col-l-3" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Post" data-event-non-interaction="true">
+                        <div class="story story--smallMobile">
+                            <a class="lazy story-image" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Untitled-design-42-516x270.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Untitled-design-42-516x270.jpg 516w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Untitled-design-42-280x147.jpg 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Untitled-design-42-258x135.jpg 258w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Untitled-design-42-796x417.jpg 796w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Untitled-design-42.jpg 1200w" sizes="(max-width: 516px) 100vw, 516px" width="516" height="270" href="https://thenextweb.com/syndication/2018/01/28/possibilities-iphone-xs-camera-way-bigger-animoji/"></a>
+                            <h4 class="story-title">
+                                <a href="https://thenextweb.com/syndication/2018/01/28/possibilities-iphone-xs-camera-way-bigger-animoji/">
+                                    The possibilities of the iPhone X’s camera are way bigger than Animoji
+                                </a>
+                            </h4>
+                            <ul class="story-byline">
+                                <li><a href="https://thenextweb.com/author/james-hsu/">James Hsu</a></li>
+                                <li>
+                                    <time datetime="2018-01-28T16:29:26+01:00" class="timeago"></time>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="u-col-xs-12 u-col-m-4 u-col-l-3" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Post" data-event-non-interaction="true">
+                        <div class="story story--smallMobile">
+                            <a class="lazy story-image" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/IJii3Ho-1-540x270.png" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/IJii3Ho-1-540x270.png 540w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/IJii3Ho-1-280x140.png 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/IJii3Ho-1-270x135.png 270w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/IJii3Ho-1-796x398.png 796w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/IJii3Ho-1-1592x796.png 1592w" sizes="(max-width: 540px) 100vw, 540px" width="540" height="270" href="https://thenextweb.com/offers/2018/01/28/r-programming-is-leading-the-way-to-technologys-next-big-thing/"></a>
+                            <h4 class="story-title">
+                                <a href="https://thenextweb.com/offers/2018/01/28/r-programming-is-leading-the-way-to-technologys-next-big-thing/">
+                                    R Programming is leading the way to technology’s next big thing
+                                </a>
+                            </h4>
+                            <ul class="story-byline">
+                                <li><a href="https://thenextweb.com/author/tnwdeals/">TNW Deals</a></li>
+                                <li>
+                                    <time datetime="2018-01-28T16:00:00+01:00" class="timeago"></time>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="u-col-xs-12 u-col-m-4 u-col-l-3" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Post" data-event-non-interaction="true">
+                        <div class="story story--smallMobile">
+                            <a class="lazy story-image" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/file-20180110-46728-rdk42f-405x270.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/file-20180110-46728-rdk42f-405x270.jpg 405w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/file-20180110-46728-rdk42f-280x187.jpg 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/file-20180110-46728-rdk42f-202x135.jpg 202w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/file-20180110-46728-rdk42f.jpg 754w" sizes="(max-width: 405px) 100vw, 405px" width="405" height="270" href="https://thenextweb.com/syndication/2018/01/28/stop-robots-killing-us-make-squishy/"></a>
+                            <h4 class="story-title">
+                                <a href="https://thenextweb.com/syndication/2018/01/28/stop-robots-killing-us-make-squishy/">
+                                    How do we stop robots from killing us? Make them squishy
+                                </a>
+                            </h4>
+                            <ul class="story-byline">
+                                <li><a href="https://thenextweb.com/author/theconversation/">The Conversation</a></li>
+                                <li>
+                                    <time datetime="2018-01-28T12:18:13+01:00" class="timeago"></time>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="u-col-xs-12 u-col-m-4 u-col-l-3" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Post" data-event-non-interaction="true">
+                        <div class="story story--smallMobile">
+                            <a class="lazy story-image" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Untitled-design-41-516x270.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Untitled-design-41-516x270.jpg 516w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Untitled-design-41-280x147.jpg 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Untitled-design-41-258x135.jpg 258w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Untitled-design-41-796x417.jpg 796w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Untitled-design-41.jpg 1200w" sizes="(max-width: 516px) 100vw, 516px" width="516" height="270" href="https://thenextweb.com/syndication/2018/01/27/designers-dont-let-harsh-feedback-completely-destroy-sense-self-worth/"></a>
+                            <h4 class="story-title">
+                                <a href="https://thenextweb.com/syndication/2018/01/27/designers-dont-let-harsh-feedback-completely-destroy-sense-self-worth/">
+                                    Designers! Don't let harsh feedback completely destroy your sense of self worth
+                                </a>
+                            </h4>
+                            <ul class="story-byline">
+                                <li><a href="https://thenextweb.com/author/fabricio-teixeira/">Fabricio Teixeira</a></li>
+                                <li>
+                                    <time datetime="2018-01-27T16:47:16+01:00" class="timeago"></time>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="u-col-xs-12 u-col-m-4 u-col-l-3" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Post" data-event-non-interaction="true">
+                        <div class="story story--smallMobile">
+                            <a class="lazy story-image" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/eb1v23j-1-540x270.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/eb1v23j-1-540x270.jpg 540w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/eb1v23j-1-280x140.jpg 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/eb1v23j-1-270x135.jpg 270w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/eb1v23j-1-796x398.jpg 796w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/eb1v23j-1-1592x796.jpg 1592w" sizes="(max-width: 540px) 100vw, 540px" width="540" height="270" href="https://thenextweb.com/offers/2018/01/27/get-yourself-top-flight-photoshop-skills-for-less-than-20/"></a>
+                            <h4 class="story-title">
+                                <a href="https://thenextweb.com/offers/2018/01/27/get-yourself-top-flight-photoshop-skills-for-less-than-20/">
+                                    Get yourself top-flight Photoshop skills for less than $20
+                                </a>
+                            </h4>
+                            <ul class="story-byline">
+                                <li><a href="https://thenextweb.com/author/tnwdeals/">TNW Deals</a></li>
+                                <li>
+                                    <time datetime="2018-01-27T16:00:00+01:00" class="timeago"></time>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="tnw-ad TNW_MS_HOME_MPU_BTF"></div>
+
+            </section>
+
+            <section class="deals deals--long investments">
+                <header class="deals-header">
+                    <h2>
+                        <a href="https://index.co/investments?utm_campaign=funding_block&utm_medium=referral&utm_source=thenextweb.com" target="_blank" data-event-category="Homepage" data-event-action="Shelves - Index" data-event-label="Name" data-event-non-interaction="true">
+                            Latest funding rounds on Index.co
+                        </a>
+                    </h2>
+                    <a class="deals-header-more" href="https://index.co/investments?utm_campaign=funding_block&utm_medium=referral&utm_source=thenextweb.com" target="_blank" data-event-category="Homepage" data-event-action="Shelves - Index" data-event-label="See more investments" data-event-non-interaction="true">See more</a>
+                    <a class="deals-header-more" href="https://index.co/investments?utm_campaign=funding_block&utm_medium=referral&utm_source=thenextweb.com" target="_blank" data-event-category="Homepage" data-event-action="Shelves - Index" data-event-label="Get investment updates" data-event-non-interaction="true">Get updates by email</a>
+                    <a class="deals-header-more" href="https://index.co/faq?utm_campaign=funding_block&utm_medium=referral&utm_source=thenextweb.com#addFunding" target="_blank" data-event-category="Homepage" data-event-action="Shelves - Index" data-event-label="Add investment info" data-event-non-interaction="true">Add info</a>
+                </header>
+
+                <div class="u-row verticals">
+
+                    <div class="u-col-xs-12 u-col-m-4 u-col-l-3 vertical vertical--lighter">
+                        <div class="story story--investment">
+                            <a data-event-category="Homepage" data-event-action="Shelves - Index" data-event-label="Card header" data-event-non-interaction="true" href="https://index.co/company/PayByGroup/funding/undisclosed?utm_campaign=funding_block&utm_medium=referral&utm_source=thenextweb.com" target="_blank" class="story-investmentCard-header">
+                                <img class="story-investmentCard-company-image" src="https://index.tnwcdn.com/images/b8cc8403098381d9e1747df8a1f0db9efdec3e42.png">
+                                <h4 class="story-investmentCard-name">Pay By Group</h4>
+                                <div class="story-investmentCard-deets">
+                                    <h4>Undisclosed amount</h4>
+                                    <h5>Undisclosed funding</h5>
+                                </div>
+                            </a>
+                            <div class="story-investmentCard-card">
+                                <a data-event-category="Homepage" data-event-action="Shelves - Index" data-event-label="Card market" data-event-non-interaction="true" href="https://index.co/company/PayByGroup/funding/undisclosed?utm_campaign=funding_block&utm_medium=referral&utm_source=thenextweb.com" target="_blank" class="story-investmentCard-bit">
+                                    <i class="icon investment-info-icon icon--tag--dark"></i>
+                                    <span>Social Media, +3</span>
+                                </a>
+                                <a data-event-category="Homepage" data-event-action="Shelves - Index" data-event-label="Card investor list" data-event-non-interaction="true" class="story-investmentCard-bit" href="https://index.co/company/PayByGroup/funding/undisclosed?utm_campaign=funding_block&utm_medium=referral&utm_source=thenextweb.com" target="_blank">
+                                    <i class="icon investment-info-icon icon--briefcase--dark"></i>
+                                    <span>Czar Ventures</span>
+                                </a>
+                            </div>
+                            <ul class="story-byline story-addPadding">
+                                <li>
+                                    <a data-event-category="Homepage" data-event-action="Shelves - Index" data-event-label="Card story" data-event-non-interaction="true" class="story-title-link" href="http://www.finsmes.com/2018/01/pay-by-group-receives-investment-from-czar-ventures.html" target="_blank">Pay By Group Receives Investment from Czar Ventures                                <span class="story-title-source">on&nbsp;FinSMEs</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="u-col-xs-12 u-col-m-4 u-col-l-3 vertical vertical--lighter">
+                        <div class="story story--investment">
+                            <a data-event-category="Homepage" data-event-action="Shelves - Index" data-event-label="Card header" data-event-non-interaction="true" href="https://index.co/company/videocoin/funding/series-undisclosed?utm_campaign=funding_block&utm_medium=referral&utm_source=thenextweb.com" target="_blank" class="story-investmentCard-header">
+                                <img class="story-investmentCard-company-image" src="https://index.tnwcdn.com/images/4049c73f69021448aed27cad045d441a44ffe773.jpg">
+                                <h4 class="story-investmentCard-name">VideoCoin</h4>
+                                <div class="story-investmentCard-deets">
+                                    <h4>$5M</h4>
+                                    <h5>Venture Capital</h5>
+                                </div>
+                            </a>
+                            <div class="story-investmentCard-card">
+                                <a data-event-category="Homepage" data-event-action="Shelves - Index" data-event-label="Card market" data-event-non-interaction="true" href="https://index.co/company/videocoin/funding/series-undisclosed?utm_campaign=funding_block&utm_medium=referral&utm_source=thenextweb.com" target="_blank" class="story-investmentCard-bit">
+                                    <i class="icon investment-info-icon icon--tag--dark"></i>
+                                    <span>Video</span>
+                                </a>
+                                <a data-event-category="Homepage" data-event-action="Shelves - Index" data-event-label="Card investor list" data-event-non-interaction="true" class="story-investmentCard-bit" href="https://index.co/company/videocoin/funding/series-undisclosed?utm_campaign=funding_block&utm_medium=referral&utm_source=thenextweb.com" target="_blank">
+                                    <i class="icon investment-info-icon icon--briefcase--dark"></i>
+                                    <span>Galaxy Investment Partners, +3</span>
+                                </a>
+                            </div>
+                            <ul class="story-byline story-addPadding">
+                                <li>
+                                    <a data-event-category="Homepage" data-event-action="Shelves - Index" data-event-label="Card story" data-event-non-interaction="true" class="story-title-link" href="http://www.finsmes.com/2018/01/videocoin-raises-5m-in-initial-funding.html" target="_blank">VideoCoin Raises $5m in Initial Funding                                <span class="story-title-source">on&nbsp;FinSMEs</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="u-col-xs-12 u-col-m-4 u-col-l-3 vertical vertical--lighter">
+                        <div class="story story--investment">
+                            <a data-event-category="Homepage" data-event-action="Shelves - Index" data-event-label="Card header" data-event-non-interaction="true" href="https://index.co/company/neptune-flood/funding/seed?utm_campaign=funding_block&utm_medium=referral&utm_source=thenextweb.com" target="_blank" class="story-investmentCard-header">
+                                <img class="story-investmentCard-company-image" src="https://index.tnwcdn.com/images/a07351ce6473f9c695aa237352f9d2ac3616b003.jpg">
+                                <h4 class="story-investmentCard-name">Neptune Flood</h4>
+                                <div class="story-investmentCard-deets">
+                                    <h4>$2M</h4>
+                                    <h5>Seed fund</h5>
+                                </div>
+                            </a>
+                            <div class="story-investmentCard-card">
+                                <a data-event-category="Homepage" data-event-action="Shelves - Index" data-event-label="Card market" data-event-non-interaction="true" href="https://index.co/company/neptune-flood/funding/seed?utm_campaign=funding_block&utm_medium=referral&utm_source=thenextweb.com" target="_blank" class="story-investmentCard-bit">
+                                    <i class="icon investment-info-icon icon--tag--dark"></i>
+                                    <span>Analytics</span>
+                                </a>
+                                <a data-event-category="Homepage" data-event-action="Shelves - Index" data-event-label="Card investor list" data-event-non-interaction="true" class="story-investmentCard-bit" href="https://index.co/company/neptune-flood/funding/seed?utm_campaign=funding_block&utm_medium=referral&utm_source=thenextweb.com" target="_blank">
+                                    <i class="icon investment-info-icon icon--briefcase--dark"></i>
+                                    <span>Trevor Burgess</span>
+                                </a>
+                            </div>
+                            <ul class="story-byline story-addPadding">
+                                <li>
+                                    <a data-event-category="Homepage" data-event-action="Shelves - Index" data-event-label="Card story" data-event-non-interaction="true" class="story-title-link" href="http://www.finsmes.com/2018/01/neptune-flood-secures-2m-seed-financing-round.html" target="_blank">Neptune Flood Secures $2M Seed Financing Round                                <span class="story-title-source">on&nbsp;FinSMEs</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="u-col-xs-12 u-col-m-4 u-col-l-3 vertical vertical--lighter">
+                        <div class="story story--investment">
+                            <a data-event-category="Homepage" data-event-action="Shelves - Index" data-event-label="Card header" data-event-non-interaction="true" href="https://index.co/company/dominode/funding/series-undisclosed?utm_campaign=funding_block&utm_medium=referral&utm_source=thenextweb.com" target="_blank" class="story-investmentCard-header">
+                                <img class="story-investmentCard-company-image" src="https://index.tnwcdn.com/images/164ed42fee56aeaf163c51e25d316b2cdd08594c.png">
+                                <h4 class="story-investmentCard-name">Dominode</h4>
+                                <div class="story-investmentCard-deets">
+                                    <h4>$1.3M</h4>
+                                    <h5>Venture Capital</h5>
+                                </div>
+                            </a>
+                            <div class="story-investmentCard-card">
+                                <a data-event-category="Homepage" data-event-action="Shelves - Index" data-event-label="Card market" data-event-non-interaction="true" href="https://index.co/company/dominode/funding/series-undisclosed?utm_campaign=funding_block&utm_medium=referral&utm_source=thenextweb.com" target="_blank" class="story-investmentCard-bit">
+                                    <i class="icon investment-info-icon icon--tag--dark"></i>
+                                    <span>Data Security</span>
+                                </a>
+                                <a data-event-category="Homepage" data-event-action="Shelves - Index" data-event-label="Card investor list" data-event-non-interaction="true" class="story-investmentCard-bit" href="https://index.co/company/dominode/funding/series-undisclosed?utm_campaign=funding_block&utm_medium=referral&utm_source=thenextweb.com" target="_blank">
+                                    <i class="icon investment-info-icon icon--briefcase--dark"></i>
+                                    <span>Blockchange Ventures</span>
+                                </a>
+                            </div>
+                            <ul class="story-byline story-addPadding">
+                                <li>
+                                    <a data-event-category="Homepage" data-event-action="Shelves - Index" data-event-label="Card story" data-event-non-interaction="true" class="story-title-link" href="http://www.finsmes.com/2018/01/dominode-closes-1-3m-venture-capital-funding.html" target="_blank">Dominode Closes $1.3M Venture Capital Funding                                <span class="story-title-source">on&nbsp;FinSMEs</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <div class="sections u-row">
+
+                <section class="section u-col-xs-12 u-col-m-6 u-col-l-4">
+                    <h2><a href="https://thenextweb.com/section/apps/" class="gtm-apps-link">Apps</h2>
+                    <ul>
+                        <li>
+                            <article class="section-popular">
+                                <div class="lazy section-popular-image" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/smartertime-368x276.jpeg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/smartertime-368x276.jpeg 368w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/smartertime-736x552.jpeg 736w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/smartertime-632x474.jpeg 632w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/smartertime-536x402.jpeg 536w" sizes="(max-width: 368px) 100vw, 368px" width="368" height="276"></div>
+                                <a class="section-popular-trigger gtm-apps-1" href="https://thenextweb.com/apps/2018/01/26/smarter-time-wants-to-make-it-easier-to-track-your-day-to-day-routine/" data-event-category="Homepage" data-event-action="Most popular" data-event-label="Post" data-event-non-interaction="true"></a>
+                                <header class="section-popular-header">
+                                    <h5 class="section-popular-section">Most popular</h5>
+                                    <h3 class="section-popular-title"><a href="https://thenextweb.com/apps/2018/01/26/smarter-time-wants-to-make-it-easier-to-track-your-day-to-day-routine/" class="gtm-apps-1">Smarter Time is the ultimate Android time tracking app</a></h3>
+                                    <ul class="section-popular-byline">
+                                        <li><a href="https://thenextweb.com/author/matthewhughes/">Matthew Hughes</a></li>
+                                        <li><time datetime="2018-01-26T17:35:41+01:00" class="timeago"></time></li>
+                                    </ul>
+                                </header>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="section-latest">
+                                <header class="section-latest-header">
+                                    <h5 class="section-latest-section">Latest</h5>
+                                    <h4 class="section-latest-title"><a class="gtm-apps-2" href="https://thenextweb.com/apps/2018/01/26/cleanemail-is-like-a-hyperloop-to-inbox-zero-town/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Post" data-event-non-interaction="true">CleanEmail is like a Hyperloop to Inbox Zero Town</a></h4>
+                                </header>
+                                <a class="lazy section-latest-image gtm-apps-2" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/CleanEmail.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/CleanEmail.jpg 1557w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/CleanEmail-280x147.jpg 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/CleanEmail-513x270.jpg 513w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/CleanEmail-256x135.jpg 256w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/CleanEmail-796x419.jpg 796w" sizes="(max-width: 1557px) 100vw, 1557px" width="1557" height="820" href="https://thenextweb.com/apps/2018/01/26/cleanemail-is-like-a-hyperloop-to-inbox-zero-town/"></a>
+                            </article>
+                        </li>
+
+                        <li class="section-headline">
+                            <h4 class="section-headline-title">
+                                <a class="gtm-apps-3"
+                                   href="https://thenextweb.com/twitter/2018/01/26/twitter-is-working-on-a-new-video-tool-that-sounds-a-lot-like-snapchat/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Section Headline" data-event-non-interaction="true">
+                                    Twitter is reportedly working on a new video tool that sounds a lot like Snapchat
+                                </a>
+                            </h4>
+                        </li>
+                        <li class="section-headline">
+                            <h4 class="section-headline-title">
+                                <a class="gtm-apps-4"
+                                   href="https://thenextweb.com/gadgets/2018/01/25/can-preorder-elon-musks-new-flamethrower-guess-password/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Section Headline" data-event-non-interaction="true">
+                                    You can preorder Elon Musk's new flamethrower - if you guess the password
+                                </a>
+                            </h4>
+                        </li>
+                        <li class="section-headline">
+                            <h4 class="section-headline-title">
+                                <a class="gtm-apps-5"
+                                   href="https://thenextweb.com/facebook/2018/01/25/facebook-instagram-many-users/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Section Headline" data-event-non-interaction="true">
+                                    Facebook and Instagram are down for many users
+                                </a>
+                            </h4>
+                        </li>
+                        <li class="section-headline">
+                            <h4 class="section-headline-title">
+                                <a class="gtm-apps-6"
+                                   href="https://thenextweb.com/gaming/2018/01/25/nintendo-is-shutting-down-its-miitomo-social-app-in-may/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Section Headline" data-event-non-interaction="true">
+                                    Nintendo is shutting down its Miitomo social app in May
+                                </a>
+                            </h4>
+                        </li>
+                        <li class="section-headline">
+                            <h4 class="section-headline-title">
+                                <a class="gtm-apps-7"
+                                   href="https://thenextweb.com/apple/2018/01/25/3-neat-features-coming-to-ios-11-3-this-spring/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Section Headline" data-event-non-interaction="true">
+                                    3 neat iOS 11.3 features coming this spring
+                                </a>
+                            </h4>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="section u-col-xs-12 u-col-m-6 u-col-l-4">
+                    <h2><a href="https://thenextweb.com/section/gear/" class="gtm-gear-link">Gear</h2>
+                    <ul>
+                        <li>
+                            <article class="section-popular">
+                                <div class="lazy section-popular-image" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/MVIMG_20180126_175901-368x276.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/MVIMG_20180126_175901-368x276.jpg 368w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/MVIMG_20180126_175901-736x552.jpg 736w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/MVIMG_20180126_175901-1044x783.jpg 1044w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/MVIMG_20180126_175901-632x474.jpg 632w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/MVIMG_20180126_175901-536x402.jpg 536w" sizes="(max-width: 368px) 100vw, 368px" width="368" height="276"></div>
+                                <a class="section-popular-trigger gtm-gear-1" href="https://thenextweb.com/reviews/2018/01/27/review-logitechs-powerplay-means-never-charge-mouse/" data-event-category="Homepage" data-event-action="Most popular" data-event-label="Post" data-event-non-interaction="true"></a>
+                                <header class="section-popular-header">
+                                    <h5 class="section-popular-section">Most popular</h5>
+                                    <h3 class="section-popular-title"><a href="https://thenextweb.com/reviews/2018/01/27/review-logitechs-powerplay-means-never-charge-mouse/" class="gtm-gear-1">Review: Logitech's PowerPlay means I never have to charge my mouse again</a></h3>
+                                    <ul class="section-popular-byline">
+                                        <li><a href="https://thenextweb.com/author/napierlopez/">Napier Lopez</a></li>
+                                        <li><time datetime="2018-01-27T00:16:18+01:00" class="timeago"></time></li>
+                                    </ul>
+                                </header>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="section-latest">
+                                <header class="section-latest-header">
+                                    <h5 class="section-latest-section">Latest</h5>
+                                    <h4 class="section-latest-title"><a class="gtm-gear-2" href="https://thenextweb.com/gadgets/2018/01/26/official-galaxy-s9-renders-leaked/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Post" data-event-non-interaction="true">Official Galaxy S9 renders have leaked</a></h4>
+                                </header>
+                                <a class="lazy section-latest-image gtm-gear-2" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Samsung-s9-camera-invite.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Samsung-s9-camera-invite.jpg 1551w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Samsung-s9-camera-invite-280x148.jpg 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Samsung-s9-camera-invite-511x270.jpg 511w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Samsung-s9-camera-invite-255x135.jpg 255w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Samsung-s9-camera-invite-796x421.jpg 796w" sizes="(max-width: 1551px) 100vw, 1551px" width="1551" height="820" href="https://thenextweb.com/gadgets/2018/01/26/official-galaxy-s9-renders-leaked/"></a>
+                            </article>
+                        </li>
+
+                        <li class="section-headline">
+                            <h4 class="section-headline-title">
+                                <a class="gtm-gear-3"
+                                   href="https://thenextweb.com/google/2018/01/26/after-notebooks-google-is-reportedly-bringing-chrome-os-to-tablets/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Section Headline" data-event-non-interaction="true">
+                                    After notebooks, Google is reportedly bringing Chrome OS to tablets
+                                </a>
+                            </h4>
+                        </li>
+                        <li class="section-headline">
+                            <h4 class="section-headline-title">
+                                <a class="gtm-gear-4"
+                                   href="https://thenextweb.com/gadgets/2018/01/25/sonos-bundles-two-speakers-price-one-homepod/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Section Headline" data-event-non-interaction="true">
+                                    Sonos bundles two speakers for the price of one HomePod
+                                </a>
+                            </h4>
+                        </li>
+                        <li class="section-headline">
+                            <h4 class="section-headline-title">
+                                <a class="gtm-gear-5"
+                                   href="https://thenextweb.com/gadgets/2018/01/25/samsung-to-unveil-its-galaxy-s9-with-a-reimagined-camera-on-february-25/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Section Headline" data-event-non-interaction="true">
+                                    Samsung to unveil its Galaxy S9 with a 'reimagined' camera on February 25
+                                </a>
+                            </h4>
+                        </li>
+                        <li class="section-headline">
+                            <h4 class="section-headline-title">
+                                <a class="gtm-gear-6"
+                                   href="https://thenextweb.com/gadgets/2018/01/24/djis-new-mavic-air-mightve-finally-convinced-get-drone/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Section Headline" data-event-non-interaction="true">
+                                    DJI's new Mavic Air might've finally convinced me to get a drone
+                                </a>
+                            </h4>
+                        </li>
+                        <li class="section-headline">
+                            <h4 class="section-headline-title">
+                                <a class="gtm-gear-7"
+                                   href="https://thenextweb.com/gaming/2018/01/23/microsoft-brings-the-xbox-one-x-to-india-with-a-rs-45000-price-tag/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Section Headline" data-event-non-interaction="true">
+                                    Microsoft brings the Xbox One X to India with a Rs. 45,000 price tag
+                                </a>
+                            </h4>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="section u-col-xs-12 u-col-m-6 u-col-l-4">
+                    <h2><a href="https://thenextweb.com/section/tech/" class="gtm-tech-link">Tech</h2>
+                    <ul>
+                        <li>
+                            <article class="section-popular">
+                                <div class="lazy section-popular-image" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/file-20171212-9396-zfdnwd-368x276.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/file-20171212-9396-zfdnwd-368x276.jpg 368w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/file-20171212-9396-zfdnwd-280x210.jpg 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/file-20171212-9396-zfdnwd-360x270.jpg 360w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/file-20171212-9396-zfdnwd-180x135.jpg 180w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/file-20171212-9396-zfdnwd-736x552.jpg 736w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/file-20171212-9396-zfdnwd-632x474.jpg 632w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/file-20171212-9396-zfdnwd-536x402.jpg 536w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/file-20171212-9396-zfdnwd.jpg 754w" sizes="(max-width: 368px) 100vw, 368px" width="368" height="276"></div>
+                                <a class="section-popular-trigger gtm-tech-1" href="https://thenextweb.com/syndication/2018/01/29/letting-prisoners-use-internet-good-society-arent/" data-event-category="Homepage" data-event-action="Most popular" data-event-label="Post" data-event-non-interaction="true"></a>
+                                <header class="section-popular-header">
+                                    <h5 class="section-popular-section">Most popular</h5>
+                                    <h3 class="section-popular-title"><a href="https://thenextweb.com/syndication/2018/01/29/letting-prisoners-use-internet-good-society-arent/" class="gtm-tech-1">Letting prisoners use the internet is good for society — so why aren’t we?</a></h3>
+                                    <ul class="section-popular-byline">
+                                        <li><a href="https://thenextweb.com/author/theconversation/">The Conversation</a></li>
+                                        <li><time datetime="2018-01-29T11:28:45+01:00" class="timeago"></time></li>
+                                    </ul>
+                                </header>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="section-latest">
+                                <header class="section-latest-header">
+                                    <h5 class="section-latest-section">Latest</h5>
+                                    <h4 class="section-latest-title"><a class="gtm-tech-2" href="https://thenextweb.com/syndication/2018/01/28/possibilities-iphone-xs-camera-way-bigger-animoji/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Post" data-event-non-interaction="true">The possibilities of the iPhone X’s camera are way bigger than Animoji</a></h4>
+                                </header>
+                                <a class="lazy section-latest-image gtm-tech-2" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Untitled-design-42.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Untitled-design-42.jpg 1200w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Untitled-design-42-280x147.jpg 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Untitled-design-42-516x270.jpg 516w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Untitled-design-42-258x135.jpg 258w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Untitled-design-42-796x417.jpg 796w" sizes="(max-width: 1200px) 100vw, 1200px" width="1200" height="628" href="https://thenextweb.com/syndication/2018/01/28/possibilities-iphone-xs-camera-way-bigger-animoji/"></a>
+                            </article>
+                        </li>
+
+                        <li class="section-headline">
+                            <h4 class="section-headline-title">
+                                <a class="gtm-tech-3"
+                                   href="https://thenextweb.com/syndication/2018/01/28/stop-robots-killing-us-make-squishy/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Section Headline" data-event-non-interaction="true">
+                                    How do we stop robots from killing us? Make them squishy
+                                </a>
+                            </h4>
+                        </li>
+                        <li class="section-headline">
+                            <h4 class="section-headline-title">
+                                <a class="gtm-tech-4"
+                                   href="https://thenextweb.com/syndication/2018/01/27/next-camera-revolution-let-us-see-walls-deep-inside-brain/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Section Headline" data-event-non-interaction="true">
+                                    The next camera revolution could let us see through walls and deep inside the brain
+                                </a>
+                            </h4>
+                        </li>
+                        <li class="section-headline">
+                            <h4 class="section-headline-title">
+                                <a class="gtm-tech-5"
+                                   href="https://thenextweb.com/reviews/2018/01/27/this-big-ass-battery-keeps-your-beer-cold-while-powering-10-other-devices/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Section Headline" data-event-non-interaction="true">
+                                    This big-ass battery keeps your beer cold while powering 10 other devices
+                                </a>
+                            </h4>
+                        </li>
+                        <li class="section-headline">
+                            <h4 class="section-headline-title">
+                                <a class="gtm-tech-6"
+                                   href="https://thenextweb.com/apple/2018/01/27/apple-expands-self-driving-car-fleet-inch-closer-automation-domination/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Section Headline" data-event-non-interaction="true">
+                                    Apple expands its self-driving car fleet to inch closer to automation domination
+                                </a>
+                            </h4>
+                        </li>
+                        <li class="section-headline">
+                            <h4 class="section-headline-title">
+                                <a class="gtm-tech-7"
+                                   href="https://thenextweb.com/artificial-intelligence/2018/01/26/ibms-watson-is-ais-greatest-ambassador/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Section Headline" data-event-non-interaction="true">
+                                    IBM's Watson is AI's greatest ambassador
+                                </a>
+                            </h4>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="section u-col-xs-12 u-col-m-6 u-col-l-4">
+                    <h2><a href="https://thenextweb.com/section/creative/" class="gtm-creative-link">Creative</h2>
+                    <ul>
+                        <li>
+                            <article class="section-popular">
+                                <div class="lazy section-popular-image" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Untitled-design-41-368x276.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Untitled-design-41-368x276.jpg 368w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Untitled-design-41-736x552.jpg 736w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Untitled-design-41-632x474.jpg 632w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Untitled-design-41-536x402.jpg 536w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Untitled-design-41-840x628.jpg 840w" sizes="(max-width: 368px) 100vw, 368px" width="368" height="276"></div>
+                                <a class="section-popular-trigger gtm-creative-1" href="https://thenextweb.com/syndication/2018/01/27/designers-dont-let-harsh-feedback-completely-destroy-sense-self-worth/" data-event-category="Homepage" data-event-action="Most popular" data-event-label="Post" data-event-non-interaction="true"></a>
+                                <header class="section-popular-header">
+                                    <h5 class="section-popular-section">Most popular</h5>
+                                    <h3 class="section-popular-title"><a href="https://thenextweb.com/syndication/2018/01/27/designers-dont-let-harsh-feedback-completely-destroy-sense-self-worth/" class="gtm-creative-1">Designers! Don't let harsh feedback completely destroy your sense of self worth</a></h3>
+                                    <ul class="section-popular-byline">
+                                        <li><a href="https://thenextweb.com/author/fabricio-teixeira/">Fabricio Teixeira</a></li>
+                                        <li><time datetime="2018-01-27T16:47:16+01:00" class="timeago"></time></li>
+                                    </ul>
+                                </header>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="section-latest">
+                                <header class="section-latest-header">
+                                    <h5 class="section-latest-section">Latest</h5>
+                                    <h4 class="section-latest-title"><a class="gtm-creative-2" href="https://thenextweb.com/syndication/2018/01/23/made-font-scratch-got-submitted-google-24-hours/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Post" data-event-non-interaction="true">How I made a font from scratch and submitted it to Google in 24 hours</a></h4>
+                                </header>
+                                <a class="lazy section-latest-image gtm-creative-2" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Untitled-design-38.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Untitled-design-38.jpg 1200w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Untitled-design-38-280x147.jpg 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Untitled-design-38-516x270.jpg 516w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Untitled-design-38-258x135.jpg 258w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Untitled-design-38-796x417.jpg 796w" sizes="(max-width: 1200px) 100vw, 1200px" width="1200" height="628" href="https://thenextweb.com/syndication/2018/01/23/made-font-scratch-got-submitted-google-24-hours/"></a>
+                            </article>
+                        </li>
+
+                        <li class="section-headline">
+                            <h4 class="section-headline-title">
+                                <a class="gtm-creative-3"
+                                   href="https://thenextweb.com/syndication/2018/01/22/heres-remove-bias-ux-design/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Section Headline" data-event-non-interaction="true">
+                                    Here's how to remove the bias from your UX design
+                                </a>
+                            </h4>
+                        </li>
+                        <li class="section-headline">
+                            <h4 class="section-headline-title">
+                                <a class="gtm-creative-4"
+                                   href="https://thenextweb.com/syndication/2018/01/20/interfaces-dying-brand-needs-bigger-personality/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Section Headline" data-event-non-interaction="true">
+                                    Interfaces are dying, so your brand needs a bigger personality
+                                </a>
+                            </h4>
+                        </li>
+                        <li class="section-headline">
+                            <h4 class="section-headline-title">
+                                <a class="gtm-creative-5"
+                                   href="https://thenextweb.com/artificial-intelligence/2018/01/19/clever-coder-uses-ai-to-make-disturbingly-cool-music-videos/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Section Headline" data-event-non-interaction="true">
+                                    Clever coder uses AI to make disturbingly cool music videos
+                                </a>
+                            </h4>
+                        </li>
+                        <li class="section-headline">
+                            <h4 class="section-headline-title">
+                                <a class="gtm-creative-6"
+                                   href="https://thenextweb.com/artificial-intelligence/2018/01/19/microsofts-ai-is-a-robo-van-gogh-that-could-change-how-designers-work/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Section Headline" data-event-non-interaction="true">
+                                    Microsoft's AI is a robo Van Gogh that could change how designers work
+                                </a>
+                            </h4>
+                        </li>
+                        <li class="section-headline">
+                            <h4 class="section-headline-title">
+                                <a class="gtm-creative-7"
+                                   href="https://thenextweb.com/syndication/2018/01/17/hawaiis-emergency-alert-systems-interface-looked/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Section Headline" data-event-non-interaction="true">
+                                    How Hawaii’s Emergency Alert System’s interface SHOULD have looked
+                                </a>
+                            </h4>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="section u-col-xs-12 u-col-m-6 u-col-l-4">
+                    <h2><a href="https://thenextweb.com/section/contributors/" class="gtm-contributors-link">Contributors</h2>
+                    <ul>
+                        <li>
+                            <article class="section-popular">
+                                <div class="lazy section-popular-image" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/How-not-to-completely-fail-as-a-digital-consultant-368x276.png" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/How-not-to-completely-fail-as-a-digital-consultant-368x276.png 368w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/How-not-to-completely-fail-as-a-digital-consultant-736x552.png 736w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/How-not-to-completely-fail-as-a-digital-consultant-632x474.png 632w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/How-not-to-completely-fail-as-a-digital-consultant-536x402.png 536w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/How-not-to-completely-fail-as-a-digital-consultant-840x628.png 840w" sizes="(max-width: 368px) 100vw, 368px" width="368" height="276"></div>
+                                <a class="section-popular-trigger gtm-contributors-1" href="https://thenextweb.com/contributors/2018/01/28/not-completely-fail-digital-consultant/" data-event-category="Homepage" data-event-action="Most popular" data-event-label="Post" data-event-non-interaction="true"></a>
+                                <header class="section-popular-header">
+                                    <h5 class="section-popular-section">Most popular</h5>
+                                    <h3 class="section-popular-title"><a href="https://thenextweb.com/contributors/2018/01/28/not-completely-fail-digital-consultant/" class="gtm-contributors-1">How not to completely fail as a digital consultant</a></h3>
+                                    <ul class="section-popular-byline">
+                                        <li><a href="https://thenextweb.com/author/andrei-david/">Andrei David</a></li>
+                                        <li><time datetime="2018-01-28T18:30:38+01:00" class="timeago"></time></li>
+                                    </ul>
+                                </header>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="section-latest">
+                                <header class="section-latest-header">
+                                    <h5 class="section-latest-section">Latest</h5>
+                                    <h4 class="section-latest-title"><a class="gtm-contributors-2" href="https://thenextweb.com/contributors/2018/01/29/hackers-con-artists-perils-social-engineering/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Post" data-event-non-interaction="true">Hackers are con artists: The perils of social engineering</a></h4>
+                                </header>
+                                <a class="lazy section-latest-image gtm-contributors-2" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Hackers-are-con-artists-The-perils-of-social-engineering.png" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Hackers-are-con-artists-The-perils-of-social-engineering.png 1200w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Hackers-are-con-artists-The-perils-of-social-engineering-280x147.png 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Hackers-are-con-artists-The-perils-of-social-engineering-516x270.png 516w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Hackers-are-con-artists-The-perils-of-social-engineering-258x135.png 258w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Hackers-are-con-artists-The-perils-of-social-engineering-796x417.png 796w" sizes="(max-width: 1200px) 100vw, 1200px" width="1200" height="628" href="https://thenextweb.com/contributors/2018/01/29/hackers-con-artists-perils-social-engineering/"></a>
+                            </article>
+                        </li>
+
+                        <li class="section-headline">
+                            <h4 class="section-headline-title">
+                                <a class="gtm-contributors-3"
+                                   href="https://thenextweb.com/contributors/2018/01/29/hands-customer-support-makes-zero-sense/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Section Headline" data-event-non-interaction="true">
+                                    Why 'all hands' customer support makes zero sense
+                                </a>
+                            </h4>
+                        </li>
+                        <li class="section-headline">
+                            <h4 class="section-headline-title">
+                                <a class="gtm-contributors-4"
+                                   href="https://thenextweb.com/contributors/2018/01/28/not-completely-fail-digital-consultant/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Section Headline" data-event-non-interaction="true">
+                                    How not to completely fail as a digital consultant
+                                </a>
+                            </h4>
+                        </li>
+                        <li class="section-headline">
+                            <h4 class="section-headline-title">
+                                <a class="gtm-contributors-5"
+                                   href="https://thenextweb.com/contributors/2018/01/28/4-key-traits-retailers-need-adopt-thrive-2018/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Section Headline" data-event-non-interaction="true">
+                                    4 key traits retailers need to adopt to thrive in 2018
+                                </a>
+                            </h4>
+                        </li>
+                        <li class="section-headline">
+                            <h4 class="section-headline-title">
+                                <a class="gtm-contributors-6"
+                                   href="https://thenextweb.com/contributors/2018/01/28/peaks-valleys-honest-look-startup-ecosystem-switzerland/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Section Headline" data-event-non-interaction="true">
+                                    Peaks and valleys: An honest look at the startup ecosystem in Switzerland
+                                </a>
+                            </h4>
+                        </li>
+                        <li class="section-headline">
+                            <h4 class="section-headline-title">
+                                <a class="gtm-contributors-7"
+                                   href="https://thenextweb.com/contributors/2018/01/27/comfort-vs-safety-can-cars/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Section Headline" data-event-non-interaction="true">
+                                    Comfort vs safety : Can we have both in our cars?
+                                </a>
+                            </h4>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="section u-col-xs-12 u-col-m-6 u-col-l-4">
+                    <h2><a href="https://thenextweb.com/section/insights/" class="gtm-insights-link">Insights</h2>
+                    <ul>
+                        <li>
+                            <article class="section-popular">
+                                <div class="lazy section-popular-image" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/cryptocurrency-1-368x276.png" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/cryptocurrency-1-368x276.png 368w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/cryptocurrency-1-736x552.png 736w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/cryptocurrency-1-632x474.png 632w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/cryptocurrency-1-536x402.png 536w" sizes="(max-width: 368px) 100vw, 368px" width="368" height="276"></div>
+                                <a class="section-popular-trigger gtm-insights-1" href="https://thenextweb.com/hardfork/2018/01/29/cryptocurrency-mystery-box-review/" data-event-category="Homepage" data-event-action="Most popular" data-event-label="Post" data-event-non-interaction="true"></a>
+                                <header class="section-popular-header">
+                                    <h5 class="section-popular-section">Most popular</h5>
+                                    <h3 class="section-popular-title"><a href="https://thenextweb.com/hardfork/2018/01/29/cryptocurrency-mystery-box-review/" class="gtm-insights-1">We got a cryptocurrency mystery box so you don’t have to</a></h3>
+                                    <ul class="section-popular-byline">
+                                        <li><a href="https://thenextweb.com/author/dimitarmihov/">Mix</a></li>
+                                        <li><time datetime="2018-01-29T12:47:14+01:00" class="timeago"></time></li>
+                                    </ul>
+                                </header>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="section-latest">
+                                <header class="section-latest-header">
+                                    <h5 class="section-latest-section">Latest</h5>
+                                    <h4 class="section-latest-title"><a class="gtm-insights-2" href="https://thenextweb.com/hardfork/2018/01/27/this-is-why-buying-drugs-with-bitcoin-is-a-really-bad-idea/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Post" data-event-non-interaction="true">This is why buying drugs with bitcoin is a really bad idea</a></h4>
+                                </header>
+                                <a class="lazy section-latest-image gtm-insights-2" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/dark-web-drugs.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/dark-web-drugs.jpg 1557w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/dark-web-drugs-280x147.jpg 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/dark-web-drugs-513x270.jpg 513w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/dark-web-drugs-256x135.jpg 256w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/dark-web-drugs-796x419.jpg 796w" sizes="(max-width: 1557px) 100vw, 1557px" width="1557" height="820" href="https://thenextweb.com/hardfork/2018/01/27/this-is-why-buying-drugs-with-bitcoin-is-a-really-bad-idea/"></a>
+                            </article>
+                        </li>
+
+                        <li class="section-headline">
+                            <h4 class="section-headline-title">
+                                <a class="gtm-insights-3"
+                                   href="https://thenextweb.com/politics/2018/01/27/alyssa-milano-plans-online-protest-for-trumps-state-of-the-union/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Section Headline" data-event-non-interaction="true">
+                                    Alyssa Milano plans online protest for Trump's State of The Union
+                                </a>
+                            </h4>
+                        </li>
+                        <li class="section-headline">
+                            <h4 class="section-headline-title">
+                                <a class="gtm-insights-4"
+                                   href="https://thenextweb.com/security/2018/01/26/lenovo-fingerprint-manager-flaw-windows/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Section Headline" data-event-non-interaction="true">
+                                    Lenovo’s fingerprint authentication app had bad bugs that made it easy to hack
+                                </a>
+                            </h4>
+                        </li>
+                        <li class="section-headline">
+                            <h4 class="section-headline-title">
+                                <a class="gtm-insights-5"
+                                   href="https://thenextweb.com/apps/2018/01/25/cnn-just-shuttered-casey-neistats-beme-brand/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Section Headline" data-event-non-interaction="true">
+                                    CNN just shuttered Casey Neistat's Beme
+                                </a>
+                            </h4>
+                        </li>
+                        <li class="section-headline">
+                            <h4 class="section-headline-title">
+                                <a class="gtm-insights-6"
+                                   href="https://thenextweb.com/insider/2018/01/25/dive-into-the-financial-stack-of-the-leading-dutch-scaleups-at-the-amsterdam-stack-exchange/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Section Headline" data-event-non-interaction="true">
+                                    Dive into the financial stack of the leading Dutch scaleups at the Amsterdam Stack Exchange
+                                </a>
+                            </h4>
+                        </li>
+                        <li class="section-headline">
+                            <h4 class="section-headline-title">
+                                <a class="gtm-insights-7"
+                                   href="https://thenextweb.com/tech/2018/01/25/deliveroo-plus-is-going-to-kill-me-im-okay-with-that/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Section Headline" data-event-non-interaction="true">
+                                    Deliveroo’s subscription service is going to kill me. I’m okay with that
+                                </a>
+                            </h4>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="section u-col-xs-12 u-col-m-6 u-col-l-4">
+                    <h2><a href="https://thenextweb.com/section/launch/" class="gtm-launch-link">Launch</h2>
+                    <ul>
+                        <li>
+                            <article class="section-popular">
+                                <div class="lazy section-popular-image" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Google-Bulletin-368x276.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Google-Bulletin-368x276.jpg 368w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Google-Bulletin-736x552.jpg 736w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Google-Bulletin-632x474.jpg 632w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Google-Bulletin-536x402.jpg 536w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Google-Bulletin-840x630.jpg 840w" sizes="(max-width: 368px) 100vw, 368px" width="368" height="276"></div>
+                                <a class="section-popular-trigger gtm-launch-1" href="https://thenextweb.com/google/2018/01/26/google-is-building-bulletin-a-hyperlocal-community-news-service/" data-event-category="Homepage" data-event-action="Most popular" data-event-label="Post" data-event-non-interaction="true"></a>
+                                <header class="section-popular-header">
+                                    <h5 class="section-popular-section">Most popular</h5>
+                                    <h3 class="section-popular-title"><a href="https://thenextweb.com/google/2018/01/26/google-is-building-bulletin-a-hyperlocal-community-news-service/" class="gtm-launch-1">Google is building Bulletin, a hyperlocal community news service</a></h3>
+                                    <ul class="section-popular-byline">
+                                        <li><a href="https://thenextweb.com/author/abhimanyughoshal/">Abhimanyu Ghoshal</a></li>
+                                        <li><time datetime="2018-01-26T07:38:39+01:00" class="timeago"></time></li>
+                                    </ul>
+                                </header>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="section-latest">
+                                <header class="section-latest-header">
+                                    <h5 class="section-latest-section">Latest</h5>
+                                    <h4 class="section-latest-title"><a class="gtm-launch-2" href="https://thenextweb.com/security/2018/01/25/alphabets-new-security-company-wants-to-help-the-good-guys-fight-cybercrime/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Post" data-event-non-interaction="true">Alphabet's new security company wants to help 'the good guys' fight cybercrime</a></h4>
+                                </header>
+                                <a class="lazy section-latest-image gtm-launch-2" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Chronicle-hed.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Chronicle-hed.jpg 760w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Chronicle-hed-280x147.jpg 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Chronicle-hed-513x270.jpg 513w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Chronicle-hed-257x135.jpg 257w" sizes="(max-width: 760px) 100vw, 760px" width="760" height="400" href="https://thenextweb.com/security/2018/01/25/alphabets-new-security-company-wants-to-help-the-good-guys-fight-cybercrime/"></a>
+                            </article>
+                        </li>
+
+                        <li class="section-headline">
+                            <h4 class="section-headline-title">
+                                <a class="gtm-launch-3"
+                                   href="https://thenextweb.com/google/2018/01/24/google-now-sells-audiobooks-that-you-can-listen-to-without-your-phone/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Section Headline" data-event-non-interaction="true">
+                                    Google now sells audiobooks that you can listen to without your phone
+                                </a>
+                            </h4>
+                        </li>
+                        <li class="section-headline">
+                            <h4 class="section-headline-title">
+                                <a class="gtm-launch-4"
+                                   href="https://thenextweb.com/hardfork/2018/01/23/japans-bitflyer-bitcoin-exchange-lands-in-europe/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Section Headline" data-event-non-interaction="true">
+                                    Japan's BitFlyer Bitcoin exchange lands in Europe
+                                </a>
+                            </h4>
+                        </li>
+                        <li class="section-headline">
+                            <h4 class="section-headline-title">
+                                <a class="gtm-launch-5"
+                                   href="https://thenextweb.com/us/2018/01/22/amazons-cashier-less-grocery-store-opens-to-the-public-today/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Section Headline" data-event-non-interaction="true">
+                                    Amazon's cashier-less grocery store opens to the public today
+                                </a>
+                            </h4>
+                        </li>
+                        <li class="section-headline">
+                            <h4 class="section-headline-title">
+                                <a class="gtm-launch-6"
+                                   href="https://thenextweb.com/apps/2018/01/17/hikes-new-app-for-basic-android-phones-enables-payments-messaging-and-news-without-data/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Section Headline" data-event-non-interaction="true">
+                                    Hike brings payments, news, and messaging to basic Android phones without mobile data
+                                </a>
+                            </h4>
+                        </li>
+                        <li class="section-headline">
+                            <h4 class="section-headline-title">
+                                <a class="gtm-launch-7"
+                                   href="https://thenextweb.com/in/2018/01/15/ofo-reportedly-plans-to-launch-its-bike-sharing-service-in-india-with-paytms-help/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Section Headline" data-event-non-interaction="true">
+                                    Ofo is partnering with Paytm to bring bike-sharing to India [Update: it's on]
+                                </a>
+                            </h4>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="section u-col-xs-12 u-col-m-6 u-col-l-4">
+                    <h2><a href="https://thenextweb.com/section/world/" class="gtm-world-link">World</h2>
+                    <ul>
+                        <li>
+                            <article class="section-popular">
+                                <div class="lazy section-popular-image" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Lyft-hed-368x276.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Lyft-hed-368x276.jpg 368w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Lyft-hed-736x552.jpg 736w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Lyft-hed-1044x783.jpg 1044w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Lyft-hed-632x474.jpg 632w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Lyft-hed-536x402.jpg 536w" sizes="(max-width: 368px) 100vw, 368px" width="368" height="276"></div>
+                                <a class="section-popular-trigger gtm-world-1" href="https://thenextweb.com/us/2018/01/26/lyft-investigates-claims-of-employees-peeking-at-riders-contact-info-and-destinations/" data-event-category="Homepage" data-event-action="Most popular" data-event-label="Post" data-event-non-interaction="true"></a>
+                                <header class="section-popular-header">
+                                    <h5 class="section-popular-section">Most popular</h5>
+                                    <h3 class="section-popular-title"><a href="https://thenextweb.com/us/2018/01/26/lyft-investigates-claims-of-employees-peeking-at-riders-contact-info-and-destinations/" class="gtm-world-1">Lyft investigates claims of employees peeking at riders' contact info and destinations</a></h3>
+                                    <ul class="section-popular-byline">
+                                        <li><a href="https://thenextweb.com/author/abhimanyughoshal/">Abhimanyu Ghoshal</a></li>
+                                        <li><time datetime="2018-01-26T06:47:49+01:00" class="timeago"></time></li>
+                                    </ul>
+                                </header>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="section-latest">
+                                <header class="section-latest-header">
+                                    <h5 class="section-latest-section">Latest</h5>
+                                    <h4 class="section-latest-title"><a class="gtm-world-2" href="https://thenextweb.com/syndication/2018/01/25/twitter-shaped-oman-monarchys-relationship-citizens/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Post" data-event-non-interaction="true">How Twitter has shaped the Oman monarchy’s relationship with its citizens</a></h4>
+                                </header>
+                                <a class="lazy section-latest-image gtm-world-2" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Untitled-design-40.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Untitled-design-40.jpg 1200w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Untitled-design-40-280x147.jpg 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Untitled-design-40-516x270.jpg 516w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Untitled-design-40-258x135.jpg 258w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/Untitled-design-40-796x417.jpg 796w" sizes="(max-width: 1200px) 100vw, 1200px" width="1200" height="628" href="https://thenextweb.com/syndication/2018/01/25/twitter-shaped-oman-monarchys-relationship-citizens/"></a>
+                            </article>
+                        </li>
+
+                        <li class="section-headline">
+                            <h4 class="section-headline-title">
+                                <a class="gtm-world-3"
+                                   href="https://thenextweb.com/media/2018/01/24/we-just-stumbled-upon-the-most-boring-piece-of-fake-news-ever-the-russian-cabbage-conspiracy/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Section Headline" data-event-non-interaction="true">
+                                    The Russian cabbage conspiracy might be the most boring fake news ever
+                                </a>
+                            </h4>
+                        </li>
+                        <li class="section-headline">
+                            <h4 class="section-headline-title">
+                                <a class="gtm-world-4"
+                                   href="https://thenextweb.com/us/2018/01/19/only-president-trump-can-halt-the-nsas-warrantless-mass-surveillance/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Section Headline" data-event-non-interaction="true">
+                                    Only President Trump can halt the NSA's warrantless mass surveillance
+                                </a>
+                            </h4>
+                        </li>
+                        <li class="section-headline">
+                            <h4 class="section-headline-title">
+                                <a class="gtm-world-5"
+                                   href="https://thenextweb.com/hardfork/2018/01/18/report-south-korea-is-considering-closing-local-cryptocurrency-exchanges-again/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Section Headline" data-event-non-interaction="true">
+                                    South Korea is considering closing local cryptocurrency exchanges (again)
+                                </a>
+                            </h4>
+                        </li>
+                        <li class="section-headline">
+                            <h4 class="section-headline-title">
+                                <a class="gtm-world-6"
+                                   href="https://thenextweb.com/syndication/2018/01/16/kenyas-push-nuclear-power-rests-false-premises/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Section Headline" data-event-non-interaction="true">
+                                    Kenya’s push for nuclear power rests on false premises
+                                </a>
+                            </h4>
+                        </li>
+                        <li class="section-headline">
+                            <h4 class="section-headline-title">
+                                <a class="gtm-world-7"
+                                   href="https://thenextweb.com/hardfork/2018/01/16/china-reportedly-plans-to-block-people-from-using-foreign-cryptocurrency-exchanges/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Section Headline" data-event-non-interaction="true">
+                                    China reportedly plans to block access to foreign cryptocurrency exchanges
+                                </a>
+                            </h4>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="section u-col-xs-12 u-col-m-6 u-col-l-4">
+                    <h2><a href="https://thenextweb.com/section/distract/" class="gtm-distract-link">Distract</h2>
+                    <ul>
+                        <li>
+                            <article class="section-popular">
+                                <div class="lazy section-popular-image" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2017/05/Mixer-368x276.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2017/05/Mixer-368x276.jpg 368w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2017/05/Mixer-736x552.jpg 736w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2017/05/Mixer-632x474.jpg 632w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2017/05/Mixer-536x402.jpg 536w" sizes="(max-width: 368px) 100vw, 368px" width="368" height="276"></div>
+                                <a class="section-popular-trigger gtm-distract-1" href="https://thenextweb.com/gaming/2018/01/26/mixer-beat-twitch-not-being-twitch/" data-event-category="Homepage" data-event-action="Most popular" data-event-label="Post" data-event-non-interaction="true"></a>
+                                <header class="section-popular-header">
+                                    <h5 class="section-popular-section">Most popular</h5>
+                                    <h3 class="section-popular-title"><a href="https://thenextweb.com/gaming/2018/01/26/mixer-beat-twitch-not-being-twitch/" class="gtm-distract-1">Mixer can beat Twitch by not being Twitch</a></h3>
+                                    <ul class="section-popular-byline">
+                                        <li><a href="https://thenextweb.com/author/rachelkaser/">Rachel Kaser</a></li>
+                                        <li><time datetime="2018-01-26T20:21:07+01:00" class="timeago"></time></li>
+                                    </ul>
+                                </header>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="section-latest">
+                                <header class="section-latest-header">
+                                    <h5 class="section-latest-section">Latest</h5>
+                                    <h4 class="section-latest-title"><a class="gtm-distract-2" href="https://thenextweb.com/facebook/2018/01/25/facebooks-two-question-survey-isnt-dumb-sounds/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Post" data-event-non-interaction="true">Facebook's two question survey isn't as dumb as it sounds</a></h4>
+                                </header>
+                                <a class="lazy section-latest-image gtm-distract-2" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2016/09/zuckerberg.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2016/09/zuckerberg.jpg 1612w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2016/09/zuckerberg-280x140.jpg 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2016/09/zuckerberg-540x270.jpg 540w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2016/09/zuckerberg-270x135.jpg 270w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2016/09/zuckerberg-796x398.jpg 796w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2016/09/zuckerberg-1592x796.jpg 1592w" sizes="(max-width: 1612px) 100vw, 1612px" width="1612" height="806" href="https://thenextweb.com/facebook/2018/01/25/facebooks-two-question-survey-isnt-dumb-sounds/"></a>
+                            </article>
+                        </li>
+
+                        <li class="section-headline">
+                            <h4 class="section-headline-title">
+                                <a class="gtm-distract-3"
+                                   href="https://thenextweb.com/video/2018/01/25/logan-pauls-anti-suicide-video-features-far-much-logan-paul/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Section Headline" data-event-non-interaction="true">
+                                    Logan Paul's anti-suicide video features far too much Logan Paul
+                                </a>
+                            </h4>
+                        </li>
+                        <li class="section-headline">
+                            <h4 class="section-headline-title">
+                                <a class="gtm-distract-4"
+                                   href="https://thenextweb.com/gaming/2018/01/24/million-dollar-space-battle-happening-now-video-game/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Section Headline" data-event-non-interaction="true">
+                                    A million-dollar space battle is happening now... in a video game
+                                </a>
+                            </h4>
+                        </li>
+                        <li class="section-headline">
+                            <h4 class="section-headline-title">
+                                <a class="gtm-distract-5"
+                                   href="https://thenextweb.com/apple/2018/01/24/apples-homepod-sales-copy-is-so-bad-i-bought-a-google-home-max/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Section Headline" data-event-non-interaction="true">
+                                    Apple's HomePod sales copy is so bad I bought a Google Home Max
+                                </a>
+                            </h4>
+                        </li>
+                        <li class="section-headline">
+                            <h4 class="section-headline-title">
+                                <a class="gtm-distract-6"
+                                   href="https://thenextweb.com/distract/2018/01/22/this-mysterious-conspiracy-theory-about-mattresses-is-everything-we-love-about-reddit/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Section Headline" data-event-non-interaction="true">
+                                    A Reddit mattress conspiracy theory got even weirder after top comment got deleted
+                                </a>
+                            </h4>
+                        </li>
+                        <li class="section-headline">
+                            <h4 class="section-headline-title">
+                                <a class="gtm-distract-7"
+                                   href="https://thenextweb.com/apps/2018/01/22/missed-tinder-connection-campus-wide-search-girl/" data-event-category="Homepage" data-event-action="Latest stories" data-event-label="Section Headline" data-event-non-interaction="true">
+                                    Missed Tinder connection leads to campus-wide search for the girl of this guy's dreams
+                                </a>
+                            </h4>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <section class="deals">
+                <header class="deals-header">
+                    <h2><a href="https://deals.thenextweb.com/" target="_blank" data-event-category="Homepage" data-event-action="Shelves - deals" data-event-label="Name" data-event-non-interaction="true">Latest deals</a></h2>
+                    <a class="deals-header-more" href="https://deals.thenextweb.com/" target="_blank" data-event-category="Homepage" data-event-action="Shelves - deals" data-event-label="All new deals" data-event-non-interaction="true">See all Deals</a>
+                </header>
+                <ul class="u-row">
+                    <li class="u-col-xs-12 u-col-m-4 u-col-l-3">
+                        <div class="story story--deal story--smallMobile">
+                            <a class="lazy story-image" data-src="https://cdnp3.stackassets.com/cc167d666da5a61584aefe36077eb181a1953542/store/266381f6c7251c76b6fa08b8abbbb03deece5df11811416ad6c452996177/sale_14237_primary_image.jpg" href="https://deals.thenextweb.com/sales/the-complete-2018-comptia-certification-training-bundle-lifetime-access/?utm_source=thenextweb.com&utm_medium=dealfeed&utm_campaign=/sales/the-complete-2018-comptia-certification-training-bundle-lifetime-access" target="_blank" data-event-category="Homepage" data-event-action="Loop Posts - Deal" data-event-label="Post - Article" data-event-non-interaction="true"></a>
+                            <div class="story-dealDiscount">
+                                <div>99&#37; off</div>
+                            </div>
+                            <h4 class="story-title">
+                                <a href="https://deals.thenextweb.com/sales/the-complete-2018-comptia-certification-training-bundle-lifetime-access/?utm_source=thenextweb.com&utm_medium=dealfeed&utm_campaign=/sales/the-complete-2018-comptia-certification-training-bundle-lifetime-access" data-event-category="Homepage" data-event-action="Loop Posts - Deal" data-event-label="Post - Article" data-event-non-interaction="true">
+                                    The Complete 2018 CompTIA Certification Training Bundle: Lifetime Access
+                                </a>
+                            </h4>
+                            <div class="story-dealPrice">
+                                <span class="story-dealPrice-old">$4927</span>
+                                <span class="story-dealPrice-new">$59</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="u-col-xs-12 u-col-m-4 u-col-l-3">
+                        <div class="story story--deal story--smallMobile">
+                            <a class="lazy story-image" data-src="https://cdnp2.stackassets.com/9bcc322934675c0d0b6acc1d2a39af2e36e2a560/store/08a14a6a1434c9fa1fe6acd595e613cf87fa83cdabf5498ecfc64ef49cb1/sale_14019_primary_image.jpg" href="https://deals.thenextweb.com/sales/master-writing-bundle/?utm_source=thenextweb.com&utm_medium=dealfeed&utm_campaign=/sales/master-writing-bundle" target="_blank" data-event-category="Homepage" data-event-action="Loop Posts - Deal" data-event-label="Post - Article" data-event-non-interaction="true"></a>
+                            <div class="story-dealDiscount">
+                                <div>97&#37; off</div>
+                            </div>
+                            <h4 class="story-title">
+                                <a href="https://deals.thenextweb.com/sales/master-writing-bundle/?utm_source=thenextweb.com&utm_medium=dealfeed&utm_campaign=/sales/master-writing-bundle" data-event-category="Homepage" data-event-action="Loop Posts - Deal" data-event-label="Post - Article" data-event-non-interaction="true">
+                                    Copywriting Mastery Bundle
+                                </a>
+                            </h4>
+                            <div class="story-dealPrice">
+                                <span class="story-dealPrice-old">$660</span>
+                                <span class="story-dealPrice-new">$19</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="u-col-xs-12 u-col-m-4 u-col-l-3">
+                        <div class="story story--deal story--smallMobile">
+                            <a class="lazy story-image" data-src="https://cdnp0.stackassets.com/d06e0a21251242c02e8c18b656d7598bf7f6ade1/store/2e8b9b68df7803b6a2c5f5fcfdf8e5d32fb52a25490da53bdd5a790542e5/sale_14040_primary_image.jpg" href="https://deals.thenextweb.com/sales/se-ranking-personal-plan-lifetime-subscription/?utm_source=thenextweb.com&utm_medium=dealfeed&utm_campaign=/sales/se-ranking-personal-plan-lifetime-subscription" target="_blank" data-event-category="Homepage" data-event-action="Loop Posts - Deal" data-event-label="Post - Article" data-event-non-interaction="true"></a>
+                            <div class="story-dealDiscount">
+                                <div>94&#37; off</div>
+                            </div>
+                            <h4 class="story-title">
+                                <a href="https://deals.thenextweb.com/sales/se-ranking-personal-plan-lifetime-subscription/?utm_source=thenextweb.com&utm_medium=dealfeed&utm_campaign=/sales/se-ranking-personal-plan-lifetime-subscription" data-event-category="Homepage" data-event-action="Loop Posts - Deal" data-event-label="Post - Article" data-event-non-interaction="true">
+                                    SE Ranking Personal Plan: Lifetime Subscription
+                                </a>
+                            </h4>
+                            <div class="story-dealPrice">
+                                <span class="story-dealPrice-old">$840</span>
+                                <span class="story-dealPrice-new">$49.99</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="u-col-xs-12 u-col-m-4 u-col-l-3">
+                        <div class="story story--deal story--smallMobile">
+                            <a class="lazy story-image" data-src="https://cdnp2.stackassets.com/b8f07afd613109a8dfd5c2d5af59c26a5181113a/store/41d15ba32692f5ce018310947d54ebd8794eb76e180b9942be86607cc485/sale_10938_primary_image.jpg" href="https://deals.thenextweb.com/sales/mastering-photoshop-bundle/?utm_source=thenextweb.com&utm_medium=dealfeed&utm_campaign=/sales/mastering-photoshop-bundle" target="_blank" data-event-category="Homepage" data-event-action="Loop Posts - Deal" data-event-label="Post - Article" data-event-non-interaction="true"></a>
+                            <div class="story-dealDiscount">
+                                <div>98&#37; off</div>
+                            </div>
+                            <h4 class="story-title">
+                                <a href="https://deals.thenextweb.com/sales/mastering-photoshop-bundle/?utm_source=thenextweb.com&utm_medium=dealfeed&utm_campaign=/sales/mastering-photoshop-bundle" data-event-category="Homepage" data-event-action="Loop Posts - Deal" data-event-label="Post - Article" data-event-non-interaction="true">
+                                    Complete Photoshop Mastery Bundle
+                                </a>
+                            </h4>
+                            <div class="story-dealPrice">
+                                <span class="story-dealPrice-old">$1210</span>
+                                <span class="story-dealPrice-new">$19</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="u-col-xs-12 u-col-m-4 u-col-l-3">
+                        <div class="story story--deal story--smallMobile">
+                            <a class="lazy story-image" data-src="https://cdnp1.stackassets.com/7f21e3c9c6c83af0897f2f9678d0e2254a33a33d/store/93437ca270a267d3a14e711f8de516edb58c2065bfcce1fca72a831c8a56/sale_10872_primary_image.jpg" href="https://deals.thenextweb.com/sales/ultimate-cisco-certification-super-bundle-lifetime/?utm_source=thenextweb.com&utm_medium=dealfeed&utm_campaign=/sales/ultimate-cisco-certification-super-bundle-lifetime" target="_blank" data-event-category="Homepage" data-event-action="Loop Posts - Deal" data-event-label="Post - Article" data-event-non-interaction="true"></a>
+                            <div class="story-dealDiscount">
+                                <div>98&#37; off</div>
+                            </div>
+                            <h4 class="story-title">
+                                <a href="https://deals.thenextweb.com/sales/ultimate-cisco-certification-super-bundle-lifetime/?utm_source=thenextweb.com&utm_medium=dealfeed&utm_campaign=/sales/ultimate-cisco-certification-super-bundle-lifetime" data-event-category="Homepage" data-event-action="Loop Posts - Deal" data-event-label="Post - Article" data-event-non-interaction="true">
+                                    Ultimate Cisco Certification Super Bundle: Lifetime Access
+                                </a>
+                            </h4>
+                            <div class="story-dealPrice">
+                                <span class="story-dealPrice-old">$3285</span>
+                                <span class="story-dealPrice-new">$59</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="u-col-xs-12 u-col-m-4 u-col-l-3">
+                        <div class="story story--deal story--smallMobile">
+                            <a class="lazy story-image" data-src="https://cdnp1.stackassets.com/505877d0f2df1c0fba08aaba03fe37c26dd6dd4d/store/ad62769793a88d0e6821955ba8815697f53628f09cffa270a0e1e6faf5ac/c7da1f7a496806057b623f74e383b05dd71c3c0b_main_hero_image.jpg" href="https://deals.thenextweb.com/sales/the-complete-seo-course-rank-your-website-in-google-easily/?utm_source=thenextweb.com&utm_medium=dealfeed&utm_campaign=/sales/the-complete-seo-course-rank-your-website-in-google-easily" target="_blank" data-event-category="Homepage" data-event-action="Loop Posts - Deal" data-event-label="Post - Article" data-event-non-interaction="true"></a>
+                            <div class="story-dealDiscount">
+                                <div>94&#37; off</div>
+                            </div>
+                            <h4 class="story-title">
+                                <a href="https://deals.thenextweb.com/sales/the-complete-seo-course-rank-your-website-in-google-easily/?utm_source=thenextweb.com&utm_medium=dealfeed&utm_campaign=/sales/the-complete-seo-course-rank-your-website-in-google-easily" data-event-category="Homepage" data-event-action="Loop Posts - Deal" data-event-label="Post - Article" data-event-non-interaction="true">
+                                    The Complete SEO Course - Rank Your Website in Google Easily
+                                </a>
+                            </h4>
+                            <div class="story-dealPrice">
+                                <span class="story-dealPrice-old">$150</span>
+                                <span class="story-dealPrice-new">$9</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="u-col-xs-12 u-col-m-4 u-col-l-3">
+                        <div class="story story--deal story--smallMobile">
+                            <a class="lazy story-image" data-src="https://cdnp3.stackassets.com/d03bb5401f494faa6c14eff0b20d771480e5c95d/store/f4862b79bd10ee24c6e3f8fb775bbb2b953fc4823774100f32cf10a5ae92/sale_6652_image.png" href="https://deals.thenextweb.com/sales/the-r-machine-learning-online-course-and-book-bundle/?utm_source=thenextweb.com&utm_medium=dealfeed&utm_campaign=/sales/the-r-machine-learning-online-course-and-book-bundle" target="_blank" data-event-category="Homepage" data-event-action="Loop Posts - Deal" data-event-label="Post - Article" data-event-non-interaction="true"></a>
+                            <div class="story-dealDiscount">
+                                <div>97&#37; off</div>
+                            </div>
+                            <h4 class="story-title">
+                                <a href="https://deals.thenextweb.com/sales/the-r-machine-learning-online-course-and-book-bundle/?utm_source=thenextweb.com&utm_medium=dealfeed&utm_campaign=/sales/the-r-machine-learning-online-course-and-book-bundle" data-event-category="Homepage" data-event-action="Loop Posts - Deal" data-event-label="Post - Article" data-event-non-interaction="true">
+                                    The Complete Introduction to R Programming Bundle
+                                </a>
+                            </h4>
+                            <div class="story-dealPrice">
+                                <span class="story-dealPrice-old">$606</span>
+                                <span class="story-dealPrice-new">$19</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="u-col-xs-12 u-col-m-4 u-col-l-3">
+                        <div class="story story--deal story--smallMobile">
+                            <a class="lazy story-image" data-src="https://cdnp2.stackassets.com/09a444e1c86e9b1935513efb7d8835a2a0dc96da/store/9094143c1ca8a4590b6587adc2a9079bdb3d343c7ca864b772de1aa35610/image.jpg" href="https://deals.thenextweb.com/sales/the-complete-digital-marketing-course-2017-12-courses-in-1/?utm_source=thenextweb.com&utm_medium=dealfeed&utm_campaign=/sales/the-complete-digital-marketing-course-2017-12-courses-in-1" target="_blank" data-event-category="Homepage" data-event-action="Loop Posts - Deal" data-event-label="Post - Article" data-event-non-interaction="true"></a>
+                            <div class="story-dealDiscount">
+                                <div>96&#37; off</div>
+                            </div>
+                            <h4 class="story-title">
+                                <a href="https://deals.thenextweb.com/sales/the-complete-digital-marketing-course-2017-12-courses-in-1/?utm_source=thenextweb.com&utm_medium=dealfeed&utm_campaign=/sales/the-complete-digital-marketing-course-2017-12-courses-in-1" data-event-category="Homepage" data-event-action="Loop Posts - Deal" data-event-label="Post - Article" data-event-non-interaction="true">
+                                    The Complete Digital Marketing Course
+                                </a>
+                            </h4>
+                            <div class="story-dealPrice">
+                                <span class="story-dealPrice-old">$200</span>
+                                <span class="story-dealPrice-new">$9</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer-links">
+            <div class="wrapper">
+                <ul class="footer-links-social">
+                    <li><a href="https://www.facebook.com/thenextweb" target="_blank" data-event-category="Footer" data-event-action="Social" data-event-label="Facebook" data-event-non-interaction="true"><i class="icon icon--facebook--light"></i></a>
+                    <li><a href="https://twitter.com/thenextweb" target="_blank" data-event-category="Footer" data-event-action="Social" data-event-label="Twitter" data-event-non-interaction="true"><i class="icon icon--twitter--light"></i></a>
+                    <li><a href="https://www.youtube.com/user/thenextweb" target="_blank" data-event-category="Footer" data-event-action="Social" data-event-label="YouTube" data-event-non-interaction="true"><i class="icon icon--youtube--light"></i></a>
+                    <li><a href="https://www.instagram.com/thenextweb" target="_blank" data-event-category="Footer" data-event-action="Social" data-event-label="Instagram" data-event-non-interaction="true"><i class="icon icon--instagram--light"></i></a>
+                    <li><a href="https://www.pinterest.com/thenextweb" target="_blank" data-event-category="Footer" data-event-action="Social" data-event-label="Pinterest" data-event-non-interaction="true"><i class="icon icon--pinterest--light"></i></a>
+                    <li><a href="https://thenextweb.com/feed/" target="_blank" data-event-category="Footer" data-event-action="Social" data-event-label="Feed" data-event-non-interaction="true"><i class="icon icon--rss--light"></i></a>
+                    <li><a data-modal="modalStayTuned" href="#" data-event-category="Footer" data-event-action="Social" data-event-label="Newsletter" data-event-non-interaction="true"><i class="icon icon--mail--light"></i></a>
+                </ul>
+                <ul class="footer-links-menu">
+                    <li><a href="/conference/" data-event-category="Footer" data-event-action="Conference" data-event-label="" data-event-non-interaction="true">Events</a></li>
+                    <li><a href="/about" data-event-category="Footer" data-event-action="About" data-event-label="" data-event-non-interaction="true">About</a></li>
+                    <li class="u-showFrom-m"><a href="/team" data-event-category="Footer" data-event-action="Team" data-event-label="" data-event-non-interaction="true">Team</a></li>
+                    <li><a href="/advertise" target="_blank" data-event-category="Footer" data-event-action="Advertise" data-event-label="" data-event-non-interaction="true">Advertise</a></li>
+                    <li><a href="https://thenextweb.homerun.hr/" target="_blank" data-event-category="Footer" data-event-action="Jobs" data-event-label="" data-event-non-interaction="true">Jobs</a></li>
+                    <li><a href="/about#contact" data-event-category="Footer" data-event-action="Contact" data-event-label="" data-event-non-interaction="true">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-legal">
+            <div class="wrapper">
+                <span>
+                    <a href="/"><img alt="The Next Web" class="footer-legal-logoTNW" src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg"></a>
+                    &copy; 2006&ndash;2018 The Next Web B.V.
+                </span>
+                <span>Made with <b>&hearts;</b> in Amsterdam.</span>
+                <span>
+                    Powered by
+                    <a href="https://www.maxcdn.com/" target="_blank"><img alt="MaxCDN" class="footer-legal-logoMaxCDN" src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/maxcdn.svg"></a>
+                </span>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <div class="js-modal modal modalStayTuned" id="modalStayTuned">
+        <div class="modal-window modal-window--noFooter">
+            <header class="modal-header">
+                <h3>Stay tuned</h3>
+                <a href="#close" title="Esc"><i class="ss-pika ss-delete" onclick="dataLayer.push( {'event':'email','eventCategory':'Email','eventAction':'Close','eventLabel':'Modal','eventNonInteraction':1} )"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path fill="#99A1AA" d="M31 19.2l-1.5-1.4-5.3 5.3-5.2-5.3-1.5 1.4 5.3 5.3-5.3 5.3 1.5 1.4 5.2-5.3 5.3 5.3 1.5-1.4-5.3-5.3" /></svg></i></a>
+            </header>
+            <div class="modal-body">
+                <h2 class="modalStayTuned-title u-m-0_5 u-text-center">
+                    Treat yourself
+                </h2>
+                <p class="lead u-m-1_5 u-text-center">
+                    Sit back and let the hottest tech news come to you by the magic of electronic mail.
+                </p>
+                <form action="https://thenextweb.com/wp-content/themes/cyberdelia/ajax/form/newsletter.php" class="u-m-1" method="post" data-xhr data-xhr-fail="newsletterFail" data-xhr-success="newsletterSuccess" onsubmit="dataLayer.push( {'event':'email','eventCategory':'Email','eventAction':'Sign up','eventLabel':'Modal','eventNonInteraction':1} );">
+                    <div class="modalStayTuned-success">
+                        <b>T</b><b>h</b><b>a</b><b>n</b><b>k</b><b>&nbsp;</b><b>y</b><b>o</b><b>u</b><b>!</b>
+                    </div>
+                    <div class="formField">
+                        <div class="formField-withButton">
+                            <div class="formField-withIcon u-float-left u-w-xs-75">
+                                <input class="formInput formInput--text" name="email" placeholder="Email" type="email" required="">
+                                <input class="" name="source" hidden id="source" style="display: none" value="thenextweb.com/">
+                                <i class="icon icon--mail"></i>
+                            </div>
+                            <button class="button u-float-left u-w-xs-25" type="submit">Sign up</button>
+                        </div>
+                    </div>
+                </form>
+                <p class="u-color-light u-fontSize-xs u-m-1 u-text-center">
+                    Prefer to get the news as it happens? Follow us on social media.
+                </p>
+                <ul class="modalStayTuned-channels u-row">
+                    <li class="u-col-xs-6 u-m-0">
+                        <div class="modalStayTuned-channels-channel modalStayTuned-channels-channel--twitter">
+                            <div class="modalStayTuned-channels-icon"><a href="https://twitter.com/thenextweb" target="_blank"><img alt="Twitter" src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icon-twitter.svg"></a></div>
+                            <p class="modalStayTuned-channels-followers">
+                                <b>1.76M</b> followers
+                            </p>
+                            <a class="twitter-follow-button" data-show-count="false" data-show-screen-name="false" href="https://twitter.com/thenextweb"></a>
+                        </div>
+                    </li>
+                    <li class="u-col-xs-6 u-m-0">
+                        <div class="modalStayTuned-channels-channel modalStayTuned-channels-channel--facebook">
+                            <div class="modalStayTuned-channels-icon"><a href="https://www.facebook.com/thenextweb" target="_blank"><img alt="Facebook" src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icon-facebook.svg"></a></div>
+                            <p class="modalStayTuned-channels-followers">
+                                <b>1M</b> likes
+                            </p>
+                            <div class="fb-like" data-href="https://www.facebook.com/thenextweb" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="js-modal modal modalStayTuned" id="modalSurvey">
+        <div class="modal-window modal-window--noFooter">
+            <header class="modal-header">
+                <h3>Help us out</h3>
+                <a href="#close" title="Esc" rel="modal:close"><i class="ss-pika ss-delete" onclick="dataLayer.push( {'event':'email','eventCategory':'Email','eventAction':'Close','eventLabel':'Modal','eventNonInteraction':1} )"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path fill="#99A1AA" d="M31 19.2l-1.5-1.4-5.3 5.3-5.2-5.3-1.5 1.4 5.3 5.3-5.3 5.3 1.5 1.4 5.2-5.3 5.3 5.3 1.5-1.4-5.3-5.3" /></svg></i></a>
+            </header>
+            <div class="modal-body">
+                <h2 class="modalStayTuned-title u-m-0_5 u-text-center">
+                    Who are you?
+                </h2>
+                <p class="lead u-m-1_5 u-text-center">
+                    Got two minutes to spare? We'd love to know a bit more about our readers.<br /><br />
+                    <a class="button u-w-xs-25" href="#">Start!</a>
+                </p>
+                <p class="u-color-light u-fontSize-xs u-m-1 u-text-center">
+                    All data collected in the survey is anonymous.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="search" id="search">
+        <header class="search-header">
+            <a class="search-header-logo" href="/">
+                <img alt="The Next Web" src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw-red.svg">
+            </a>
+            <a id="search--close" class="search--close" href="#"><i class="icon icon--close"></i></a>
+        </header>
+        <form action="/" class="search-form" method="get">
+            <input autocomplete="off" id="search-input" name="q" value="" placeholder="Search" type="text" onfocus="this.value = this.value;">
+            <a id="search-clear" class="search-clear" href="#"><i class="icon icon--close icon--close-white icon--close-small"></i></a>
+        </form>
+        <div class="search-results" id="searchResults"></div>
+
+        <div class="search-nav-hints">
+            <div class="search-nav-hint">
+                <span class="search-nav-hint-key">↑</span> <span class="search-nav-hint-key">↓</span> Navigate up/down
+            </div>
+            <div class="search-nav-hint">
+                <span class="search-nav-hint-key">Enter</span> Go to article
+            </div>
+            <div class="search-nav-hint">
+                <span class="search-nav-hint-key">/</span> Search new term
+            </div>
+            <div class="search-nav-hint">
+                <span class="search-nav-hint-key">Esc</span> Close search
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Pubmatic native templates: Content lift -->
+    <script id="tmpl_TNW_DSKT_ARTL_NLIFT" type="text/x-handlebars-template">
+        <section class="recommended u-m-2" id="recommended">
+            <h2 class="u-m-1">Recommended</h2>
+            <ul class="u-row">
+                <li class="u-col-xs-12 u-col-m-6 u-col-l-12">
+                    <div class="story story--small" data-event-category="Article" data-event-action="Recommended" data-event-label="Post" data-event-non-interaction="true">
+                        <a class="story-image gtm-recommended" sizes="(max-width: 96px) 100vw, 96px" width="96" height="96" data-event-category="Article" data-event-action="Recommended" href="{{ linkUrl }}" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" style="background-image: url(&quot;{{ imgUrl }}&quot;);" onclick="app.pubmatic.triggerTracking(['{{ linkTracker }}']); return true;"></a>
+                        <h4 class="story-title">
+                            <a data-event-category="Article" data-event-action="Recommended" class="gtm-recommended" onclick="app.pubmatic.triggerTracking(['{{ linkTracker }}']); return true;" href="{{ linkUrl }}">{{ title }}</a>
+                        </h4>
+                        <ul class="story-byline">
+                            <li>
+                                <span>{{ author }}</span>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </script>
+
+    <!-- Pubmatic native template: Who's hiring -->
+    <script id="tmpl_TNW_DSKT_ARTL_WIH" type="text/x-handlebars-template">
+        <li class="u-col-xs-12 u-col-m-6 u-col-l-12">
+            <div class="story story--x-small">
+                <a target="_blank" class="story-image" data-event-category="Article" data-event-action="Whos Hiring" data-event-label="{{ title }}" data-event-non-interaction="true" sizes="" width="80" height="80" href="{{ linkUrl }}" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" style="background-image: url(&quot;{{ imgUrl }}&quot;);" onclick="app.pubmatic.triggerTracking(['{{ linkTracker }}']); return true;"></a>
+                <h4 class="story-title">
+                    <a href="{{ linkUrl }}" target="_blank" data-event-category="Article" data-event-action="Whos Hiring" data-event-label="{{ title }}" data-event-non-interaction="true" onclick="app.pubmatic.triggerTracking(['{{ linkTracker }}']); return true;"> {{ titleText }} </a>
+                </h4>
+                <ul class="story-byline story-byline--noPadding">
+                    <li>
+                        {{ title }}
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </script>
+
+    <script type="text/javascript" src="/wp-content/advertisement.js" async></script>
+
+    <script type="text/javascript">
+        var adBlocker = true;
+        var APP_ENV = {"theme":"cyberdelia","permalink":"https:\/\/thenextweb.com","template":"home","paths":{"site":"https:\/\/thenextweb.com\/","base":"https:\/\/thenextweb.com\/wp-content\/themes\/cyberdelia\/","assets":"https:\/\/cdn0.tnwcdn.com\/wp-content\/themes\/cyberdelia\/assets\/"},"pageIdx":1,"currentPost":null,"activePostIdx":null,"postRack":[],"layout":{"siteskin":null},"category":"hardfork","categoryId":44361,"section":"insights","sectionId":35263,"adTargeting":{"sponsorName":null,"isSponsoredCategory":"No"}}    </script>
+
+    <script type="text/javascript">
+
+        function getTheCookie(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        if (getTheCookie("tuid") !== "") {
+            dataLayer.push({
+                'tuid': getTheCookie("tuid")
+            });
+        }
+
+    </script>
+
+    <script src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/js/app.min.js?v=1516791396" type="text/javascript" async></script>
+
+    <script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/thenextweb.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.2"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56794,8205,9794,65039],[55358,56794,8203,9794,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+    </script>
+    <script type='text/javascript'>
+/* <![CDATA[ */
+var wlSettings = {"ajaxUrl":"https:\/\/thenextweb.com\/wp-admin\/admin-ajax.php","isHome":"1","jsonld_enabled":""};
+/* ]]> */
+    </script>
+    <script type='text/javascript' src='https://thenextweb.com/wp-content/plugins/wordlift/public/js/wordlift-public.js?ver=3.16.3'></script>
+    <iframe width="0" height="0" frameborder="0" scrolling="no" src="https://ads.pubmatic.com/AdServer/js/user_sync.html?p=156315"></iframe>
+    <script>
+                (new Image()).src = "//sync.search.spotxchange.com/partner?source=204258";
+    </script>
+</body>
+</html>
